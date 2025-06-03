@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Event Bridge.
+Parameters:
+    ArnStepFunction:
+        Type: String
+    RoleEvent:
+        Type: String
+
+Resources:
+  EventBridge:
+    Type: 'AWS::Scheduler::Schedule'
+    Properties:
+      Name: DailyStepFunctionTrigger
+      ScheduleExpression: "cron(0 7 * * ? *)" # Todos los días a las 7 AM UTC
+      State: DISABLED
+      FlexibleTimeWindow: 
+        Mode: "OFF"
+      Target:
+        Arn: !Ref ArnStepFunction
+        RoleArn: !Ref RoleEvent

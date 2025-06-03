@@ -1,0 +1,100 @@
+# -----------------------------------------------------------------------------
+# template-lambdas.yaml
+# -----------------------------------------------------------------------------
+# This CloudFormation template defines AWS Lambda functions for the ETL pipeline.
+# It includes:
+#
+# - Four Lambda functions, each responsible for extracting and moving data for a
+#   specific bank (Contoso, Colombia, Industrial, Perabank) from a source S3 bucket
+#   to a destination S3 bucket. The Industrial function also receives RDS connection
+#   info as environment variables for further processing.
+# - Each function is configured with its handler, runtime, environment variables,
+#   IAM role, and S3 location for the deployment package (zip file).
+#
+# The LambdaExecutionRole is passed as a parameter and must grant the necessary
+# permissions for S3.
+# -----------------------------------------------------------------------------
+
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Defining the lambda functions.
+
+Parameters:
+    LambdaExecutionRole:
+        Type: String
+
+Resources:
+  LambdaFunction1:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: Extract_Contoso_Bank_File
+      Environment:
+        Variables:
+          SOURCE_BUCKET_NAME: data-clouders-project      # source 
+          SOURCE_BUCKET_PATH: Fintech-DBs/  # source
+          DESTINATION_BUCKET_NAME: awsdatacloudersprojectdaniel-s3-data
+          DESTINATION_BUCKET_PATH: Fintech-DBs/
+      Runtime: python3.9
+      Handler: contoso_bank_handler.lambda_handler
+      Role: !Ref LambdaExecutionRole
+      Code:
+        S3Bucket: data-clouders-project
+        S3Key: code/contoso_bank_handler.zip
+      Timeout: 120
+      MemorySize: 2048
+
+  LambdaFunction2:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: Extract_Colombia_Bank_File
+      Environment:
+        Variables:
+          SOURCE_BUCKET_NAME: data-clouders-project      # source
+          SOURCE_BUCKET_PATH: Fintech-DBs/ 
+          DESTINATION_BUCKET_NAME: awsdatacloudersprojectdaniel-s3-data
+          DESTINATION_BUCKET_PATH: Fintech-DBs/
+      Runtime: python3.9
+      Handler: colombia_bank_handler.lambda_handler
+      Role: !Ref LambdaExecutionRole
+      Code:
+        S3Bucket: data-clouders-project
+        S3Key: code/colombia_bank_handler.zip
+      Timeout: 120
+      MemorySize: 128
+
+  LambdaFunction3:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: Extract_Industrial_Bank_File
+      Environment:
+        Variables:
+          SOURCE_BUCKET_NAME: data-clouders-project      # source
+          SOURCE_BUCKET_PATH: Fintech-DBs/
+          DESTINATION_BUCKET_NAME: awsdatacloudersprojectdaniel-s3-data
+          DESTINATION_BUCKET_PATH: Fintech-DBs/
+      Runtime: python3.9
+      Handler: industrial_bank_handler.lambda_handler
+      Role: !Ref LambdaExecutionRole
+      Code:
+        S3Bucket: data-clouders-project
+        S3Key: code/industrial_bank_handler.zip
+      Timeout: 120
+      MemorySize: 128
+
+  LambdaFunction4:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: Extract_Perabank_File
+      Environment:
+        Variables:
+          SOURCE_BUCKET_NAME: data-clouders-project      # source 
+          SOURCE_BUCKET_PATH: Fintech-DBs/
+          DESTINATION_BUCKET_NAME: awsdatacloudersprojectdaniel-s3-data
+          DESTINATION_BUCKET_PATH: Fintech-DBs/
+      Runtime: python3.9
+      Handler: perabank_handler.lambda_handler
+      Role: !Ref LambdaExecutionRole
+      Code:
+        S3Bucket: data-clouders-project
+        S3Key: code/perabank_handler.zip
+      Timeout: 120
+      MemorySize: 128

@@ -1,0 +1,230 @@
+# -----------------------------------------------------------------------------
+# template-iam.yaml
+# -----------------------------------------------------------------------------
+# This CloudFormation template defines IAM roles and policies for the ETL pipeline.
+# It includes:
+#
+# - LambdaExecutionRole: Grants AWS Lambda functions permissions to access S3
+#   buckets and use KMS keys for encryption/decryption.
+# - glueRole: Grants AWS Glue jobs permissions to access S3, Glue Data Catalog,
+#   Athena, and CloudWatch Logs, as well as to use KMS keys.
+# - StepFunctionRole: Grants AWS Step Functions permissions to invoke Lambda
+#   functions and start/monitor Glue jobs.
+#
+# The template exports the ARNs and names of these roles for use in other stacks.
+# -----------------------------------------------------------------------------
+
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Defining iam roles and their policies.
+
+Parameters:
+    S3KMSKey:
+        Type: String
+    Bucketdataconsume:
+        Type: String
+
+Resources:
+  LambdaExecutionRole:
+      Type: AWS::IAM::Role
+      Properties:
+        AssumeRolePolicyDocument:
+          Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Principal:
+                Service:
+                  - lambda.amazonaws.com
+              Action:
+                - sts:AssumeRole
+        Policies:
+          - PolicyName: LambdaS3AccessPolicy
+            PolicyDocument:
+              Version: '2012-10-17'
+              Statement:
+                - Effect: Allow
+                  Action:
+                    - s3:ListBucket
+                    - s3:GetObject
+                    - s3:PutObject
+                  Resource:
+                    - !Sub "arn:aws:s3:::data-clouders-project/Fintech-DBs/*"
+                    - !Sub "arn:aws:s3:::awsdatacloudersprojectdaniel-s3-data/*"
+                - Effect: Allow
+                  Action:
+                    - kms:Decrypt
+                    - kms:Encrypt
+                    - kms:GenerateDataKey
+                  Resource:
+                    - !Ref S3KMSKey 
+                - Effect: Allow
+                  Action:
+                    - ec2:CreateNetworkInterface
+                    - ec2:DescribeNetworkInterfaces
+                    - ec2:DeleteNetworkInterface
+                  Resource: '*'
+                  
+  glueRole: 
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - glue.amazonaws.com
+            Action:
+              - 'sts:AssumeRole'
+      Description: Glue
+      Path: /
+      Policies: 
+        - PolicyName: s3
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: 
+                  - s3:ListBucket
+                  - s3:GetBucketLocation
+                  - s3:GetObject
+                  - s3:PutObject
+                  - s3:GetObjectVersion
+                  - s3:GetObjectACL
+                  - s3:PutObjectACL
+                  - s3:GetObjectMetaData
+                  - s3:ListMultipartUploadParts
+                  - s3:AbortMultipartUpload
+                  - s3:DeleteObject
+                  - s3:DeleteObjectVersion
+                Resource: "*"
+        - PolicyName: glue
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: 
+                  - glue:CreateDatabase
+                  - glue:GetPartitions
+                  - glue:CreateTable
+                  - glue:GetTables
+                  - glue:GetDatabase
+                  - glue:GetDatabases
+                  - glue:GetSchema
+                  - glue:GetTable
+                  - glue:GetUserDefinedFunctions
+                  - glue:UpdateTable
+                  - glue:UpdateDatabases
+                  - glue:DeleteTable
+                Resource: 
+                  - !Sub arn:${AWS::Partition}:glue:*:*:table/*/*
+                  - !Sub arn:${AWS::Partition}:glue:*:*:database/*
+                  - !Sub arn:${AWS::Partition}:glue:*:*:catalog
+        - PolicyName: athena
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: 
+                  - athena:BatchGetQueryExecution
+                  - athena:GetQueryExecution
+                  - athena:GetQueryResults
+                  - athena:GetQueryResultsStream
+                  - athena:ListQueryExecutions
+                  - athena:StartQueryExecution
+                  - athena:StopQueryExecution
+                  - athena:ListWorkGroups
+                  - athena:ListEngineVersions
+                  - athena:GetWorkGroup
+                  - athena:GetDataCatalog
+                  - athena:GetDatabase
+                  - athena:GetTableMetadata
+                  - athena:ListDataCatalogs
+                  - athena:ListDatabases
+                  - athena:ListTableMetadata
+                Resource: 
+                  - !Sub arn:${AWS::Partition}:athena:${AWS::Region}:${AWS::AccountId}:workgroup/*
+                  - !Sub arn:${AWS::Partition}:athena:${AWS::Region}:${AWS::AccountId}:datacatalog/*
+        - PolicyName: logs
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: 
+                  - logs:CreateLogGroup
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: 
+                  - arn:aws:logs:*:*:log-group:/aws-glue/jobs/output:*
+        - PolicyName: CloudWatchMetricData
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action:
+                  - cloudwatch:PutMetricData 
+                Resource: '*'
+      RoleName: Gluepoc1
+
+  StepFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: MyStepFunctionRole
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: "states.amazonaws.com"
+            Action: "sts:AssumeRole"
+      Policies:
+        - PolicyName: MyStepFunctionPolicy
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "lambda:InvokeFunction"
+                Resource:
+                  - !Sub arn:${AWS::Partition}:lambda:${AWS::Region}:${AWS::AccountId}:function:Extract_Contoso_Bank_File
+                  - !Sub arn:${AWS::Partition}:lambda:${AWS::Region}:${AWS::AccountId}:function:Extract_Colombia_Bank_File
+                  - !Sub arn:${AWS::Partition}:lambda:${AWS::Region}:${AWS::AccountId}:function:Extract_Industrial_Bank_File
+                  - !Sub arn:${AWS::Partition}:lambda:${AWS::Region}:${AWS::AccountId}:function:Extract_Perabank_File
+              - Effect: Allow
+                Action:
+                  - "glue:StartJobRun"
+                Resource:
+                  - !Sub arn:${AWS::Partition}:glue:${AWS::Region}:${AWS::AccountId}:job/GlueTransform
+                  - !Sub arn:${AWS::Partition}:glue:${AWS::Region}:${AWS::AccountId}:job/GlueQuality
+              - Effect: Allow
+                Action:
+                  - "glue:GetJobRun"
+                  - "glue:GetJobRuns"
+                Resource:
+                  - !Sub arn:${AWS::Partition}:glue:${AWS::Region}:${AWS::AccountId}:job/GlueTransform
+                  - !Sub arn:${AWS::Partition}:glue:${AWS::Region}:${AWS::AccountId}:job/GlueQuality
+
+Outputs:
+  LambdaExecutionRole:
+      Value: !Ref LambdaExecutionRole
+      Export:
+        Name: LambdaExecutionRole
+  LambdaExecutionRolearn:
+      Value: !GetAtt LambdaExecutionRole.Arn
+      Export:
+        Name: LambdaExecutionRolearn
+  glueExecutionRole:
+      Value: !Ref glueRole
+      Export:
+        Name: glueExecutionRole
+  glueExecutionRolearn:
+      Value: !GetAtt glueRole.Arn
+      Export:
+        Name: glueExecutionRolearn
+  stepExecutionRole:
+      Value: !Ref StepFunctionRole
+      Export:
+        Name: stepExecutionRole
+  stepExecutionRolearn:
+      Value: !GetAtt StepFunctionRole.Arn
+      Export:
+        Name: stepExecutionRolearn

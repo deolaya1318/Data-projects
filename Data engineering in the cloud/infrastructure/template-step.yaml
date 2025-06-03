@@ -1,0 +1,118 @@
+# -----------------------------------------------------------------------------
+# template-step.yaml
+# -----------------------------------------------------------------------------
+# This CloudFormation template defines an AWS Step Functions State Machine for
+# orchestrating the ETL pipeline. It includes:
+#
+# - MyStepFunction: A state machine that runs four Lambda extraction functions in
+#   parallel (Contoso, Colombia, Industrial, Perabank), then runs two Glue jobs
+#   in sequence (transformation and data quality).
+# - The state machine is configured with a role (StepExecutionRole) passed as a
+#   parameter, which must allow invocation of the Lambda and Glue jobs.
+# - The workflow ensures all data extraction is complete before starting the
+#   transformation and quality steps.
+#
+# The template outputs the ARN of the created Step Function for use in other stacks.
+# -----------------------------------------------------------------------------
+
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Defining the Step function State Machine.
+
+Parameters:
+    StepExecutionRole:
+        Type: String
+
+Resources:
+  MyStepFunction:
+    Type: AWS::StepFunctions::StateMachine
+    Properties:
+      StateMachineName: StepFunctionETLServerless
+      RoleArn: !Ref StepExecutionRole
+      DefinitionString: |
+        {
+          "Comment": "Parallel execution of four Lambda functions followed by a Glue job",
+          "StartAt": "Parallel",
+          "States": {
+            "Parallel": {
+              "Type": "Parallel",
+              "Branches": [
+                {
+                  "StartAt": "LambdaInvokeContosoBank",
+                  "States": {
+                    "LambdaInvokeContosoBank": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:lambda:us-east-1:235494793929:function:Extract_Contoso_Bank_File",
+                      "ResultPath": "$.Timestamp",
+                      "End": true
+                    }
+                  }
+                },
+                {
+                  "StartAt": "LambdaInvokeColombiaBank",
+                  "States": {
+                    "LambdaInvokeColombiaBank": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:lambda:us-east-1:235494793929:function:Extract_Colombia_Bank_File",
+                      "ResultPath": "$.Timestamp",
+                      "End": true
+                    }
+                  }
+                },
+                {
+                  "StartAt": "LambdaInvokeIndustrialBank",
+                  "States": {
+                    "LambdaInvokeIndustrialBank": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:lambda:us-east-1:235494793929:function:Extract_Industrial_Bank_File",
+                      "ResultPath": "$.Timestamp",
+                      "End": true
+                    }
+                  }
+                },
+                {
+                  "StartAt": "LambdaInvokePerabank",
+                  "States": {
+                    "LambdaInvokePerabank": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:lambda:us-east-1:235494793929:function:Extract_Perabank_File",
+                      "ResultPath": "$.Timestamp",
+                      "End": true
+                    }
+                  }
+                }
+              ],
+              "Next": "GlueStartJobRun",
+              "ResultPath": "$.ParallelResult"
+            },
+            "GlueStartJobRun": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::glue:startJobRun.sync",
+              "Parameters": {
+                "JobName": "GlueTransform",
+                "Arguments": {
+                  "--INPUT_BUCKET": "s3://awsdatacloudersprojectdaniel-s3-data/Fintech-DBs/",
+                  "--OUTPUT_BUCKET": "s3://awsdatacloudersprojectdaniel-s3-data/Staging/"
+                }
+              },
+              "Next": "GlueStartJobRunQuality"
+            },
+            "GlueStartJobRunQuality": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::glue:startJobRun.sync",
+              "Parameters": {
+                "JobName": "GlueQuality",
+                "Arguments": {
+                  "--INPUT_BUCKET": "s3://awsdatacloudersprojectdaniel-s3-data/Staging/",
+                  "--OUTPUT_BUCKET": "s3://awsdatacloudersprojectdaniel-s3-data/Results/"
+                }
+              },
+              "End": true
+            }
+          }
+        }
+
+Outputs:
+  ArnStepFunction:
+    Value: !GetAtt MyStepFunction.Arn
+    Export:
+      Name: ArnStepFunction

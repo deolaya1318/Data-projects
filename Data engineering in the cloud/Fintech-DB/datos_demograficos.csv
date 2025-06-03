@@ -1,0 +1,1001 @@
+cliente_id,ciudad,pais,codigo_postal,empleador,antiguedad_empleo_meses,hijos,vehiculos,propiedad_vivienda
+CL001,Cali,Colombia,90012,RetailCo,78,1,3,Propia
+CL002,Medellín,Colombia,17225,RetailCo,63,4,2,Alquilada
+CL003,Cali,Colombia,54389,,1,3,0,Ninguna
+CL004,Barranquilla,Colombia,69393,TechSolutions,27,4,1,Propia
+CL005,Bogotá,Colombia,69765,GlobalBank,10,0,1,Familiar
+CL006,Cartagena,Colombia,83333,,56,2,3,Ninguna
+CL007,Bogotá,Colombia,82994,Acme Corp,2,1,1,Propia
+CL008,Barranquilla,Colombia,28005,TechSolutions,34,0,0,Ninguna
+CL009,Cali,Colombia,39144,RetailCo,21,4,0,Familiar
+CL010,Cali,Colombia,90317,RetailCo,112,2,2,Alquilada
+CL011,Barranquilla,Colombia,18455,TechSolutions,34,3,3,Familiar
+CL012,Bogotá,Colombia,11237,RetailCo,1,4,2,Propia
+CL013,Medellín,Colombia,49416,TechSolutions,58,4,0,Familiar
+CL014,Cartagena,Colombia,19183,Acme Corp,75,2,3,Alquilada
+CL015,Cali,Colombia,64967,Acme Corp,113,3,1,Familiar
+CL016,Cali,Colombia,15242,GlobalBank,104,0,1,Propia
+CL017,Cartagena,Colombia,16048,GlobalBank,60,1,1,Familiar
+CL018,Cartagena,Colombia,37007,TechSolutions,58,4,0,Alquilada
+CL019,Medellín,Colombia,39722,TechSolutions,105,0,3,Ninguna
+CL020,Bogotá,Colombia,25559,HealthPlus,18,4,3,Propia
+CL021,Cartagena,Colombia,96395,HealthPlus,100,2,2,Propia
+CL022,Bogotá,Colombia,47642,GlobalBank,105,1,1,Alquilada
+CL023,Bogotá,Colombia,55098,,116,1,0,Familiar
+CL024,Cali,Colombia,63151,Acme Corp,19,1,1,Familiar
+CL025,Medellín,Colombia,74982,GlobalBank,118,3,3,Alquilada
+CL026,Cartagena,Colombia,74724,Acme Corp,71,2,2,Propia
+CL027,Cartagena,Colombia,40137,HealthPlus,7,1,2,Ninguna
+CL028,Barranquilla,Colombia,88571,HealthPlus,111,4,0,Ninguna
+CL029,Medellín,Colombia,76350,RetailCo,113,2,0,Ninguna
+CL030,Medellín,Colombia,77111,HealthPlus,115,3,1,Alquilada
+CL031,Cali,Colombia,67064,EduFuture,29,4,2,Familiar
+CL032,Barranquilla,Colombia,74452,TechSolutions,4,1,0,Alquilada
+CL033,Barranquilla,Colombia,51475,TechSolutions,16,0,2,Propia
+CL034,Cali,Colombia,25545,,105,2,3,Propia
+CL035,Cali,Colombia,41771,EduFuture,109,4,1,Alquilada
+CL036,Cartagena,Colombia,19622,TechSolutions,68,3,1,Familiar
+CL037,Barranquilla,Colombia,85341,TechSolutions,28,2,1,Familiar
+CL038,Bogotá,Colombia,89590,TechSolutions,63,0,0,Familiar
+CL039,Barranquilla,Colombia,23036,HealthPlus,51,1,2,Propia
+CL040,Barranquilla,Colombia,10840,TechSolutions,84,0,0,Ninguna
+CL041,Bogotá,Colombia,45963,,6,2,0,Alquilada
+CL042,Medellín,Colombia,90420,RetailCo,60,3,1,Propia
+CL043,Barranquilla,Colombia,24490,EduFuture,117,4,0,Ninguna
+CL044,Barranquilla,Colombia,90359,Acme Corp,36,1,0,Propia
+CL045,Bogotá,Colombia,49851,RetailCo,66,1,0,Propia
+CL046,Medellín,Colombia,32230,Acme Corp,49,1,2,Familiar
+CL047,Bogotá,Colombia,18352,EduFuture,41,0,0,Ninguna
+CL048,Bogotá,Colombia,64996,RetailCo,38,0,2,Propia
+CL049,Barranquilla,Colombia,89330,EduFuture,48,3,2,Ninguna
+CL050,Barranquilla,Colombia,79058,,12,0,1,Familiar
+CL051,Medellín,Colombia,39113,Acme Corp,44,1,1,Alquilada
+CL052,Cali,Colombia,22293,GlobalBank,75,1,1,Alquilada
+CL053,Medellín,Colombia,30484,TechSolutions,47,4,3,Alquilada
+CL054,Cali,Colombia,46349,RetailCo,62,1,3,Alquilada
+CL055,Bogotá,Colombia,45405,,57,0,1,Propia
+CL056,Bogotá,Colombia,65130,GlobalBank,115,1,3,Ninguna
+CL057,Barranquilla,Colombia,36109,Acme Corp,70,3,1,Familiar
+CL058,Cartagena,Colombia,11330,TechSolutions,51,2,0,Propia
+CL059,Barranquilla,Colombia,31646,RetailCo,46,2,0,Ninguna
+CL060,Barranquilla,Colombia,45279,,96,3,3,Ninguna
+CL061,Cartagena,Colombia,57948,Acme Corp,63,1,3,Ninguna
+CL062,Cali,Colombia,51078,,29,1,0,Alquilada
+CL063,Bogotá,Colombia,36630,RetailCo,50,2,2,Ninguna
+CL064,Cali,Colombia,48362,GlobalBank,14,2,1,Propia
+CL065,Barranquilla,Colombia,14089,Acme Corp,95,2,0,Alquilada
+CL066,Cartagena,Colombia,83435,TechSolutions,33,0,1,Propia
+CL067,Cartagena,Colombia,86582,TechSolutions,18,4,1,Familiar
+CL068,Barranquilla,Colombia,36392,HealthPlus,35,2,2,Ninguna
+CL069,Bogotá,Colombia,65658,TechSolutions,3,4,0,Ninguna
+CL070,Barranquilla,Colombia,65888,EduFuture,41,4,0,Familiar
+CL071,Cartagena,Colombia,90205,GlobalBank,3,3,3,Familiar
+CL072,Cali,Colombia,50802,HealthPlus,109,2,0,Familiar
+CL073,Bogotá,Colombia,70696,Acme Corp,63,4,1,Alquilada
+CL074,Cartagena,Colombia,16594,Acme Corp,18,4,1,Familiar
+CL075,Cartagena,Colombia,85775,RetailCo,17,4,2,Familiar
+CL076,Cartagena,Colombia,53474,GlobalBank,97,0,3,Familiar
+CL077,Bogotá,Colombia,94538,,22,4,1,Propia
+CL078,Bogotá,Colombia,35721,RetailCo,63,4,2,Familiar
+CL079,Medellín,Colombia,13948,Acme Corp,2,0,0,Familiar
+CL080,Barranquilla,Colombia,66806,EduFuture,116,4,3,Ninguna
+CL081,Barranquilla,Colombia,88273,Acme Corp,29,3,2,Ninguna
+CL082,Bogotá,Colombia,49826,GlobalBank,18,1,0,Ninguna
+CL083,Barranquilla,Colombia,86329,HealthPlus,107,4,1,Ninguna
+CL084,Medellín,Colombia,83893,HealthPlus,75,3,1,Familiar
+CL085,Cali,Colombia,75538,,120,2,3,Alquilada
+CL086,Cartagena,Colombia,57297,HealthPlus,17,1,1,Propia
+CL087,Cartagena,Colombia,51400,TechSolutions,100,3,0,Familiar
+CL088,Barranquilla,Colombia,69989,EduFuture,37,4,0,Familiar
+CL089,Cali,Colombia,69930,GlobalBank,68,0,0,Propia
+CL090,Barranquilla,Colombia,20136,RetailCo,48,2,2,Ninguna
+CL091,Cartagena,Colombia,57156,Acme Corp,23,2,2,Ninguna
+CL092,Bogotá,Colombia,40812,HealthPlus,87,4,2,Propia
+CL093,Cartagena,Colombia,17473,TechSolutions,103,0,1,Alquilada
+CL094,Bogotá,Colombia,77961,HealthPlus,110,0,3,Ninguna
+CL095,Cali,Colombia,18894,HealthPlus,68,1,1,Alquilada
+CL096,Medellín,Colombia,58899,RetailCo,8,4,0,Familiar
+CL097,Cali,Colombia,57286,HealthPlus,30,1,1,Alquilada
+CL098,Barranquilla,Colombia,34149,TechSolutions,90,1,3,Propia
+CL099,Medellín,Colombia,21809,HealthPlus,116,2,2,Alquilada
+CL100,Barranquilla,Colombia,61553,EduFuture,94,4,1,Alquilada
+CL101,Barranquilla,Colombia,17911,EduFuture,74,0,1,Familiar
+CL102,Cartagena,Colombia,29542,TechSolutions,40,4,1,Propia
+CL103,Cartagena,Colombia,64811,Acme Corp,91,4,2,Familiar
+CL104,Medellín,Colombia,63150,RetailCo,91,3,1,Ninguna
+CL105,Barranquilla,Colombia,76979,GlobalBank,62,1,0,Alquilada
+CL106,Cali,Colombia,37525,RetailCo,96,4,2,Familiar
+CL107,Barranquilla,Colombia,72923,RetailCo,57,0,2,Ninguna
+CL108,Barranquilla,Colombia,71707,TechSolutions,27,4,0,Alquilada
+CL109,Bogotá,Colombia,26005,TechSolutions,96,3,0,Propia
+CL110,Medellín,Colombia,78424,TechSolutions,106,1,3,Familiar
+CL111,Barranquilla,Colombia,11459,,25,0,3,Familiar
+CL112,Cali,Colombia,93713,,95,3,2,Alquilada
+CL113,Barranquilla,Colombia,44120,Acme Corp,69,4,0,Familiar
+CL114,Cali,Colombia,92914,HealthPlus,84,3,2,Propia
+CL115,Cali,Colombia,58994,Acme Corp,19,0,3,Familiar
+CL116,Bogotá,Colombia,54655,EduFuture,72,1,0,Familiar
+CL117,Barranquilla,Colombia,25337,GlobalBank,11,3,3,Alquilada
+CL118,Medellín,Colombia,77061,HealthPlus,12,4,0,Familiar
+CL119,Cartagena,Colombia,49466,Acme Corp,81,1,0,Alquilada
+CL120,Barranquilla,Colombia,28805,GlobalBank,29,2,2,Familiar
+CL121,Cartagena,Colombia,87328,EduFuture,93,2,1,Ninguna
+CL122,Cartagena,Colombia,33730,Acme Corp,99,2,3,Propia
+CL123,Medellín,Colombia,10404,RetailCo,54,2,1,Propia
+CL124,Cali,Colombia,89463,TechSolutions,110,1,2,Ninguna
+CL125,Cali,Colombia,42349,EduFuture,105,3,3,Propia
+CL126,Bogotá,Colombia,68424,,115,0,0,Ninguna
+CL127,Medellín,Colombia,12891,Acme Corp,96,0,1,Propia
+CL128,Medellín,Colombia,39354,TechSolutions,21,1,1,Alquilada
+CL129,Medellín,Colombia,56505,RetailCo,40,1,1,Ninguna
+CL130,Bogotá,Colombia,44005,GlobalBank,27,3,2,Ninguna
+CL131,Barranquilla,Colombia,14930,,18,3,3,Familiar
+CL132,Bogotá,Colombia,23086,,23,0,3,Alquilada
+CL133,Barranquilla,Colombia,76621,TechSolutions,33,2,3,Alquilada
+CL134,Bogotá,Colombia,31978,TechSolutions,117,4,3,Alquilada
+CL135,Barranquilla,Colombia,46485,RetailCo,69,2,1,Ninguna
+CL136,Barranquilla,Colombia,16478,EduFuture,116,4,3,Propia
+CL137,Cartagena,Colombia,70113,EduFuture,25,4,0,Propia
+CL138,Cali,Colombia,55857,Acme Corp,46,0,3,Propia
+CL139,Cartagena,Colombia,92263,,8,4,0,Ninguna
+CL140,Cartagena,Colombia,58544,TechSolutions,89,2,2,Propia
+CL141,Medellín,Colombia,57870,RetailCo,26,1,0,Alquilada
+CL142,Bogotá,Colombia,83193,TechSolutions,84,2,1,Familiar
+CL143,Cali,Colombia,29767,RetailCo,36,4,2,Propia
+CL144,Medellín,Colombia,20494,GlobalBank,22,4,0,Propia
+CL145,Medellín,Colombia,64638,GlobalBank,108,4,3,Propia
+CL146,Cartagena,Colombia,92026,GlobalBank,58,3,1,Alquilada
+CL147,Cartagena,Colombia,45136,HealthPlus,91,4,3,Familiar
+CL148,Cali,Colombia,89310,,22,4,3,Alquilada
+CL149,Bogotá,Colombia,79224,EduFuture,84,4,3,Propia
+CL150,Cali,Colombia,23542,TechSolutions,91,3,3,Alquilada
+CL151,Cali,Colombia,17099,Acme Corp,41,2,3,Ninguna
+CL152,Cartagena,Colombia,46653,,22,2,2,Familiar
+CL153,Bogotá,Colombia,28603,RetailCo,72,1,0,Alquilada
+CL154,Medellín,Colombia,30261,GlobalBank,47,0,1,Ninguna
+CL155,Cartagena,Colombia,61810,,94,4,0,Ninguna
+CL156,Medellín,Colombia,94972,EduFuture,24,3,1,Ninguna
+CL157,Barranquilla,Colombia,34279,Acme Corp,31,3,0,Ninguna
+CL158,Cali,Colombia,66106,Acme Corp,22,1,3,Alquilada
+CL159,Barranquilla,Colombia,19712,HealthPlus,46,0,0,Alquilada
+CL160,Barranquilla,Colombia,46052,,8,2,0,Alquilada
+CL161,Cali,Colombia,50907,Acme Corp,114,3,3,Propia
+CL162,Cali,Colombia,97141,RetailCo,79,3,0,Alquilada
+CL163,Cali,Colombia,75532,HealthPlus,62,4,1,Ninguna
+CL164,Barranquilla,Colombia,49015,Acme Corp,34,3,0,Familiar
+CL165,Barranquilla,Colombia,29849,Acme Corp,85,4,3,Ninguna
+CL166,Medellín,Colombia,48943,HealthPlus,96,4,3,Alquilada
+CL167,Barranquilla,Colombia,57684,RetailCo,76,2,1,Propia
+CL168,Bogotá,Colombia,19954,,20,1,3,Familiar
+CL169,Bogotá,Colombia,25448,GlobalBank,32,2,2,Alquilada
+CL170,Medellín,Colombia,25953,EduFuture,61,0,2,Propia
+CL171,Cali,Colombia,91383,EduFuture,105,1,1,Propia
+CL172,Cali,Colombia,63302,,18,2,1,Alquilada
+CL173,Medellín,Colombia,33700,GlobalBank,2,4,2,Propia
+CL174,Medellín,Colombia,95010,HealthPlus,38,4,1,Alquilada
+CL175,Medellín,Colombia,44732,Acme Corp,53,1,1,Alquilada
+CL176,Bogotá,Colombia,51990,RetailCo,97,1,3,Familiar
+CL177,Barranquilla,Colombia,50400,Acme Corp,18,4,0,Alquilada
+CL178,Barranquilla,Colombia,37621,TechSolutions,20,3,3,Propia
+CL179,Medellín,Colombia,37131,EduFuture,24,0,0,Ninguna
+CL180,Medellín,Colombia,52840,EduFuture,97,0,3,Familiar
+CL181,Medellín,Colombia,37962,RetailCo,66,2,2,Propia
+CL182,Medellín,Colombia,28196,EduFuture,75,4,3,Ninguna
+CL183,Bogotá,Colombia,40937,,15,4,0,Familiar
+CL184,Barranquilla,Colombia,76649,TechSolutions,103,0,3,Ninguna
+CL185,Cali,Colombia,86618,Acme Corp,101,2,3,Alquilada
+CL186,Barranquilla,Colombia,51420,Acme Corp,64,3,1,Propia
+CL187,Barranquilla,Colombia,81767,,69,2,1,Ninguna
+CL188,Cartagena,Colombia,70216,GlobalBank,31,1,2,Familiar
+CL189,Medellín,Colombia,93513,Acme Corp,73,2,1,Alquilada
+CL190,Barranquilla,Colombia,32227,RetailCo,35,1,1,Familiar
+CL191,Bogotá,Colombia,12505,HealthPlus,74,4,2,Familiar
+CL192,Bogotá,Colombia,41881,TechSolutions,94,4,0,Alquilada
+CL193,Barranquilla,Colombia,52458,GlobalBank,64,0,1,Ninguna
+CL194,Medellín,Colombia,81261,Acme Corp,106,3,3,Familiar
+CL195,Medellín,Colombia,50534,EduFuture,47,3,3,Ninguna
+CL196,Cali,Colombia,77524,EduFuture,22,3,2,Familiar
+CL197,Cartagena,Colombia,24437,TechSolutions,62,0,0,Propia
+CL198,Cali,Colombia,79134,RetailCo,27,3,0,Ninguna
+CL199,Barranquilla,Colombia,39671,,112,3,0,Familiar
+CL200,Bogotá,Colombia,54146,GlobalBank,46,3,2,Propia
+CL201,Barranquilla,Colombia,53818,GlobalBank,81,0,2,Alquilada
+CL202,Cali,Colombia,38919,RetailCo,69,3,0,Familiar
+CL203,Medellín,Colombia,51293,Acme Corp,78,2,0,Alquilada
+CL204,Cali,Colombia,93619,RetailCo,72,1,1,Familiar
+CL205,Barranquilla,Colombia,77463,Acme Corp,35,0,0,Propia
+CL206,Cartagena,Colombia,24296,RetailCo,16,4,0,Familiar
+CL207,Cali,Colombia,14553,RetailCo,39,2,1,Propia
+CL208,Bogotá,Colombia,65005,GlobalBank,41,4,0,Propia
+CL209,Medellín,Colombia,14498,RetailCo,94,3,1,Familiar
+CL210,Cartagena,Colombia,56730,Acme Corp,75,3,1,Ninguna
+CL211,Medellín,Colombia,34954,GlobalBank,91,2,2,Familiar
+CL212,Cali,Colombia,64561,GlobalBank,108,4,1,Familiar
+CL213,Cartagena,Colombia,74761,HealthPlus,72,1,2,Familiar
+CL214,Barranquilla,Colombia,56799,EduFuture,64,1,1,Propia
+CL215,Medellín,Colombia,58566,Acme Corp,16,0,3,Propia
+CL216,Bogotá,Colombia,12938,TechSolutions,55,4,2,Ninguna
+CL217,Bogotá,Colombia,72354,HealthPlus,113,3,3,Propia
+CL218,Cali,Colombia,86558,TechSolutions,7,1,3,Ninguna
+CL219,Medellín,Colombia,42461,HealthPlus,58,2,2,Familiar
+CL220,Medellín,Colombia,96962,,57,4,2,Alquilada
+CL221,Bogotá,Colombia,23591,RetailCo,88,4,1,Ninguna
+CL222,Medellín,Colombia,60079,HealthPlus,113,0,0,Ninguna
+CL223,Barranquilla,Colombia,31529,,46,1,2,Alquilada
+CL224,Medellín,Colombia,27723,EduFuture,106,1,3,Alquilada
+CL225,Cali,Colombia,85289,RetailCo,11,4,3,Alquilada
+CL226,Cali,Colombia,96323,RetailCo,83,3,2,Alquilada
+CL227,Cali,Colombia,91985,HealthPlus,82,1,3,Familiar
+CL228,Bogotá,Colombia,22947,TechSolutions,10,2,3,Alquilada
+CL229,Barranquilla,Colombia,13045,HealthPlus,10,1,2,Ninguna
+CL230,Cali,Colombia,97309,HealthPlus,86,4,2,Familiar
+CL231,Medellín,Colombia,93430,RetailCo,7,3,2,Familiar
+CL232,Bogotá,Colombia,42258,EduFuture,28,2,0,Propia
+CL233,Cali,Colombia,34211,TechSolutions,113,3,2,Ninguna
+CL234,Barranquilla,Colombia,33731,RetailCo,105,4,2,Propia
+CL235,Cartagena,Colombia,59187,EduFuture,52,3,1,Propia
+CL236,Cartagena,Colombia,62069,,109,2,3,Familiar
+CL237,Barranquilla,Colombia,10706,RetailCo,44,2,0,Alquilada
+CL238,Cali,Colombia,72359,GlobalBank,2,0,3,Propia
+CL239,Cartagena,Colombia,52324,GlobalBank,63,0,2,Ninguna
+CL240,Cartagena,Colombia,76629,,58,0,1,Alquilada
+CL241,Cali,Colombia,72864,RetailCo,96,1,3,Alquilada
+CL242,Cali,Colombia,57400,HealthPlus,52,4,2,Ninguna
+CL243,Bogotá,Colombia,43190,TechSolutions,80,3,2,Alquilada
+CL244,Bogotá,Colombia,91057,,75,4,0,Familiar
+CL245,Cali,Colombia,47212,HealthPlus,11,3,3,Familiar
+CL246,Cali,Colombia,22612,HealthPlus,68,3,3,Familiar
+CL247,Cali,Colombia,46406,EduFuture,73,4,3,Propia
+CL248,Bogotá,Colombia,54068,,14,3,0,Propia
+CL249,Barranquilla,Colombia,82947,Acme Corp,33,2,1,Familiar
+CL250,Cali,Colombia,80213,TechSolutions,111,2,0,Propia
+CL251,Barranquilla,Colombia,16191,HealthPlus,86,3,0,Ninguna
+CL252,Medellín,Colombia,92226,HealthPlus,4,1,2,Familiar
+CL253,Bogotá,Colombia,39111,Acme Corp,5,3,1,Familiar
+CL254,Cartagena,Colombia,21488,GlobalBank,20,3,2,Alquilada
+CL255,Medellín,Colombia,21139,TechSolutions,69,0,1,Alquilada
+CL256,Cartagena,Colombia,17753,EduFuture,38,1,0,Propia
+CL257,Cali,Colombia,81911,,8,4,3,Familiar
+CL258,Cali,Colombia,34758,HealthPlus,39,0,1,Ninguna
+CL259,Medellín,Colombia,12334,Acme Corp,119,1,3,Ninguna
+CL260,Cartagena,Colombia,44929,GlobalBank,88,4,3,Propia
+CL261,Cartagena,Colombia,78434,EduFuture,82,2,1,Propia
+CL262,Barranquilla,Colombia,60207,TechSolutions,111,2,3,Alquilada
+CL263,Bogotá,Colombia,97540,Acme Corp,108,1,1,Familiar
+CL264,Medellín,Colombia,35553,,97,3,2,Familiar
+CL265,Cartagena,Colombia,29569,TechSolutions,3,2,1,Familiar
+CL266,Medellín,Colombia,78655,Acme Corp,30,0,1,Familiar
+CL267,Medellín,Colombia,23422,GlobalBank,60,0,3,Propia
+CL268,Medellín,Colombia,88954,GlobalBank,92,2,3,Ninguna
+CL269,Cartagena,Colombia,29843,TechSolutions,77,0,2,Familiar
+CL270,Medellín,Colombia,23931,EduFuture,47,0,3,Propia
+CL271,Medellín,Colombia,20153,TechSolutions,65,1,2,Propia
+CL272,Medellín,Colombia,44110,HealthPlus,32,2,2,Ninguna
+CL273,Bogotá,Colombia,62390,GlobalBank,69,2,2,Familiar
+CL274,Cartagena,Colombia,70044,HealthPlus,23,0,3,Alquilada
+CL275,Cartagena,Colombia,94804,GlobalBank,100,4,3,Ninguna
+CL276,Cali,Colombia,37777,HealthPlus,3,1,0,Ninguna
+CL277,Cali,Colombia,61389,,16,3,2,Alquilada
+CL278,Medellín,Colombia,28145,,54,2,0,Ninguna
+CL279,Cartagena,Colombia,30938,,87,1,2,Familiar
+CL280,Cali,Colombia,25720,GlobalBank,45,4,2,Propia
+CL281,Cartagena,Colombia,26284,EduFuture,24,4,0,Propia
+CL282,Cartagena,Colombia,11297,Acme Corp,8,1,3,Alquilada
+CL283,Medellín,Colombia,86386,RetailCo,6,0,0,Propia
+CL284,Bogotá,Colombia,68747,RetailCo,30,4,2,Alquilada
+CL285,Cartagena,Colombia,50010,Acme Corp,111,1,0,Ninguna
+CL286,Cali,Colombia,98726,Acme Corp,58,3,0,Ninguna
+CL287,Cali,Colombia,33069,,113,4,3,Propia
+CL288,Cartagena,Colombia,34838,GlobalBank,41,0,2,Alquilada
+CL289,Barranquilla,Colombia,97194,Acme Corp,22,2,2,Ninguna
+CL290,Cali,Colombia,97845,,76,2,1,Ninguna
+CL291,Bogotá,Colombia,48078,TechSolutions,20,2,3,Ninguna
+CL292,Bogotá,Colombia,87792,RetailCo,66,1,0,Familiar
+CL293,Medellín,Colombia,94373,TechSolutions,14,2,2,Alquilada
+CL294,Cali,Colombia,76607,TechSolutions,119,1,1,Alquilada
+CL295,Medellín,Colombia,21872,TechSolutions,92,0,0,Alquilada
+CL296,Medellín,Colombia,81968,,50,4,1,Alquilada
+CL297,Barranquilla,Colombia,62070,HealthPlus,23,1,2,Ninguna
+CL298,Cali,Colombia,23162,Acme Corp,77,2,1,Ninguna
+CL299,Barranquilla,Colombia,22867,GlobalBank,63,2,3,Alquilada
+CL300,Cartagena,Colombia,86871,HealthPlus,72,4,1,Alquilada
+CL301,Medellín,Colombia,56838,GlobalBank,27,0,2,Familiar
+CL302,Bogotá,Colombia,50357,RetailCo,102,3,0,Familiar
+CL303,Cartagena,Colombia,77442,EduFuture,26,2,3,Alquilada
+CL304,Barranquilla,Colombia,47316,HealthPlus,13,3,0,Propia
+CL305,Bogotá,Colombia,71876,HealthPlus,12,0,3,Ninguna
+CL306,Cartagena,Colombia,58075,GlobalBank,6,3,2,Propia
+CL307,Cali,Colombia,16783,TechSolutions,26,2,3,Familiar
+CL308,Bogotá,Colombia,20923,GlobalBank,98,0,3,Ninguna
+CL309,Bogotá,Colombia,24414,,33,1,0,Propia
+CL310,Cali,Colombia,51648,GlobalBank,32,2,0,Alquilada
+CL311,Cartagena,Colombia,67990,Acme Corp,65,1,2,Ninguna
+CL312,Bogotá,Colombia,86205,EduFuture,20,1,0,Propia
+CL313,Bogotá,Colombia,81671,,6,3,3,Familiar
+CL314,Cali,Colombia,97970,EduFuture,100,2,0,Alquilada
+CL315,Medellín,Colombia,77404,EduFuture,87,1,0,Ninguna
+CL316,Cali,Colombia,66835,,76,3,0,Alquilada
+CL317,Medellín,Colombia,79633,,31,2,3,Ninguna
+CL318,Barranquilla,Colombia,29532,HealthPlus,36,3,0,Ninguna
+CL319,Medellín,Colombia,25607,GlobalBank,84,0,0,Ninguna
+CL320,Barranquilla,Colombia,12821,GlobalBank,2,1,2,Propia
+CL321,Cartagena,Colombia,91726,Acme Corp,84,3,3,Propia
+CL322,Cartagena,Colombia,22645,RetailCo,110,2,0,Ninguna
+CL323,Medellín,Colombia,66468,HealthPlus,3,1,2,Ninguna
+CL324,Barranquilla,Colombia,12691,Acme Corp,65,1,3,Alquilada
+CL325,Bogotá,Colombia,73345,GlobalBank,87,3,2,Ninguna
+CL326,Medellín,Colombia,29878,TechSolutions,85,2,0,Ninguna
+CL327,Bogotá,Colombia,44135,HealthPlus,56,1,0,Alquilada
+CL328,Bogotá,Colombia,81214,RetailCo,28,2,1,Propia
+CL329,Cali,Colombia,19825,HealthPlus,65,2,3,Propia
+CL330,Cartagena,Colombia,67863,Acme Corp,76,4,1,Familiar
+CL331,Cali,Colombia,73356,GlobalBank,16,0,3,Propia
+CL332,Cali,Colombia,43111,GlobalBank,110,0,1,Familiar
+CL333,Medellín,Colombia,33327,EduFuture,105,3,2,Ninguna
+CL334,Bogotá,Colombia,67951,TechSolutions,116,0,0,Propia
+CL335,Medellín,Colombia,26372,HealthPlus,50,3,0,Alquilada
+CL336,Barranquilla,Colombia,67681,EduFuture,12,1,3,Propia
+CL337,Cali,Colombia,55071,GlobalBank,5,4,2,Ninguna
+CL338,Cartagena,Colombia,88910,,11,0,1,Alquilada
+CL339,Cali,Colombia,49094,EduFuture,16,0,0,Alquilada
+CL340,Cali,Colombia,35082,GlobalBank,82,2,1,Alquilada
+CL341,Cali,Colombia,24503,RetailCo,61,2,1,Alquilada
+CL342,Barranquilla,Colombia,22190,HealthPlus,47,4,0,Propia
+CL343,Barranquilla,Colombia,57330,RetailCo,95,3,0,Alquilada
+CL344,Barranquilla,Colombia,60726,,87,3,2,Alquilada
+CL345,Barranquilla,Colombia,68000,EduFuture,19,4,0,Ninguna
+CL346,Cartagena,Colombia,41504,EduFuture,116,3,1,Familiar
+CL347,Medellín,Colombia,78421,Acme Corp,64,1,3,Propia
+CL348,Cartagena,Colombia,38529,Acme Corp,12,2,1,Familiar
+CL349,Barranquilla,Colombia,16537,EduFuture,38,1,2,Alquilada
+CL350,Cartagena,Colombia,22264,,94,0,1,Propia
+CL351,Cali,Colombia,81605,,94,1,1,Propia
+CL352,Cali,Colombia,43993,GlobalBank,40,3,0,Familiar
+CL353,Bogotá,Colombia,47010,TechSolutions,27,1,0,Alquilada
+CL354,Cali,Colombia,52033,EduFuture,90,2,2,Alquilada
+CL355,Bogotá,Colombia,28435,RetailCo,36,2,1,Alquilada
+CL356,Cali,Colombia,32787,Acme Corp,60,4,0,Propia
+CL357,Barranquilla,Colombia,53296,RetailCo,115,0,2,Propia
+CL358,Cartagena,Colombia,80857,RetailCo,95,0,3,Ninguna
+CL359,Barranquilla,Colombia,31057,TechSolutions,120,1,3,Alquilada
+CL360,Cali,Colombia,58785,Acme Corp,95,0,3,Alquilada
+CL361,Medellín,Colombia,77240,GlobalBank,9,2,1,Familiar
+CL362,Cali,Colombia,92375,TechSolutions,47,3,3,Familiar
+CL363,Cali,Colombia,19358,GlobalBank,37,0,2,Ninguna
+CL364,Bogotá,Colombia,22520,HealthPlus,36,2,2,Ninguna
+CL365,Cartagena,Colombia,35609,,63,4,0,Propia
+CL366,Medellín,Colombia,78196,HealthPlus,13,2,0,Alquilada
+CL367,Cali,Colombia,11136,Acme Corp,51,1,2,Propia
+CL368,Cartagena,Colombia,87602,HealthPlus,103,0,1,Alquilada
+CL369,Cali,Colombia,59408,,20,1,3,Propia
+CL370,Barranquilla,Colombia,81203,,15,2,3,Ninguna
+CL371,Cali,Colombia,68043,HealthPlus,37,1,1,Ninguna
+CL372,Cartagena,Colombia,79538,RetailCo,65,2,0,Ninguna
+CL373,Cartagena,Colombia,83840,RetailCo,4,2,3,Familiar
+CL374,Medellín,Colombia,55638,TechSolutions,26,0,1,Alquilada
+CL375,Cali,Colombia,51007,RetailCo,113,0,0,Alquilada
+CL376,Barranquilla,Colombia,39832,TechSolutions,73,0,0,Propia
+CL377,Cali,Colombia,25249,RetailCo,21,2,1,Familiar
+CL378,Medellín,Colombia,23918,RetailCo,46,4,1,Alquilada
+CL379,Bogotá,Colombia,20972,,22,0,2,Propia
+CL380,Bogotá,Colombia,23567,Acme Corp,71,4,0,Familiar
+CL381,Medellín,Colombia,16461,HealthPlus,53,2,1,Familiar
+CL382,Cali,Colombia,61867,,13,2,0,Propia
+CL383,Bogotá,Colombia,81891,RetailCo,13,2,2,Alquilada
+CL384,Medellín,Colombia,94222,,71,3,0,Ninguna
+CL385,Barranquilla,Colombia,80225,EduFuture,20,0,3,Familiar
+CL386,Cartagena,Colombia,44353,HealthPlus,93,0,3,Familiar
+CL387,Barranquilla,Colombia,88660,RetailCo,94,2,1,Alquilada
+CL388,Cartagena,Colombia,48880,EduFuture,120,4,2,Ninguna
+CL389,Bogotá,Colombia,62298,TechSolutions,73,0,3,Propia
+CL390,Bogotá,Colombia,16207,HealthPlus,51,4,2,Propia
+CL391,Cali,Colombia,64799,GlobalBank,87,4,3,Propia
+CL392,Cartagena,Colombia,19564,GlobalBank,17,4,2,Propia
+CL393,Medellín,Colombia,64722,TechSolutions,97,2,2,Propia
+CL394,Barranquilla,Colombia,93194,,91,3,3,Familiar
+CL395,Bogotá,Colombia,39171,Acme Corp,36,2,2,Ninguna
+CL396,Cartagena,Colombia,70991,,114,2,0,Ninguna
+CL397,Bogotá,Colombia,41953,,18,2,1,Alquilada
+CL398,Medellín,Colombia,51767,Acme Corp,69,2,0,Propia
+CL399,Cartagena,Colombia,26656,HealthPlus,34,4,0,Ninguna
+CL400,Cali,Colombia,28692,HealthPlus,96,4,2,Alquilada
+CL401,Cali,Colombia,13235,GlobalBank,55,3,0,Familiar
+CL402,Barranquilla,Colombia,85446,EduFuture,74,1,1,Propia
+CL403,Barranquilla,Colombia,85533,HealthPlus,99,2,3,Familiar
+CL404,Bogotá,Colombia,61669,TechSolutions,81,4,1,Familiar
+CL405,Barranquilla,Colombia,63593,EduFuture,6,1,3,Ninguna
+CL406,Cali,Colombia,22031,,90,4,3,Ninguna
+CL407,Bogotá,Colombia,80406,Acme Corp,29,4,0,Propia
+CL408,Medellín,Colombia,27062,RetailCo,6,4,3,Familiar
+CL409,Bogotá,Colombia,14265,TechSolutions,69,4,1,Ninguna
+CL410,Barranquilla,Colombia,53622,RetailCo,93,0,0,Alquilada
+CL411,Bogotá,Colombia,18431,EduFuture,3,4,2,Ninguna
+CL412,Cali,Colombia,82930,,72,1,2,Familiar
+CL413,Cali,Colombia,28455,TechSolutions,3,4,3,Familiar
+CL414,Barranquilla,Colombia,26531,,7,3,3,Familiar
+CL415,Barranquilla,Colombia,78547,HealthPlus,7,1,2,Ninguna
+CL416,Bogotá,Colombia,40445,HealthPlus,107,4,0,Propia
+CL417,Cali,Colombia,96631,RetailCo,50,4,0,Ninguna
+CL418,Cartagena,Colombia,29514,,57,1,1,Familiar
+CL419,Barranquilla,Colombia,58839,,100,3,3,Ninguna
+CL420,Barranquilla,Colombia,44961,EduFuture,120,2,0,Familiar
+CL421,Bogotá,Colombia,31610,,106,1,3,Propia
+CL422,Barranquilla,Colombia,88847,EduFuture,17,3,1,Ninguna
+CL423,Bogotá,Colombia,10849,HealthPlus,44,3,3,Alquilada
+CL424,Bogotá,Colombia,91124,EduFuture,99,3,3,Alquilada
+CL425,Cali,Colombia,78588,TechSolutions,105,2,0,Ninguna
+CL426,Barranquilla,Colombia,75714,RetailCo,105,3,0,Familiar
+CL427,Medellín,Colombia,32086,EduFuture,69,3,1,Familiar
+CL428,Cali,Colombia,84748,EduFuture,51,3,1,Familiar
+CL429,Medellín,Colombia,25959,EduFuture,46,2,0,Familiar
+CL430,Cali,Colombia,71958,Acme Corp,61,3,1,Ninguna
+CL431,Medellín,Colombia,84644,HealthPlus,60,1,1,Familiar
+CL432,Cali,Colombia,73655,HealthPlus,102,2,2,Familiar
+CL433,Cartagena,Colombia,18656,GlobalBank,56,2,1,Propia
+CL434,Cali,Colombia,45206,TechSolutions,8,4,2,Alquilada
+CL435,Bogotá,Colombia,30748,Acme Corp,70,4,1,Propia
+CL436,Barranquilla,Colombia,94776,GlobalBank,88,1,0,Familiar
+CL437,Cartagena,Colombia,97116,EduFuture,93,3,2,Familiar
+CL438,Cartagena,Colombia,81288,TechSolutions,105,1,0,Ninguna
+CL439,Cartagena,Colombia,75462,Acme Corp,78,0,3,Familiar
+CL440,Barranquilla,Colombia,32732,GlobalBank,11,4,3,Ninguna
+CL441,Barranquilla,Colombia,53010,RetailCo,53,3,3,Propia
+CL442,Cali,Colombia,69255,RetailCo,47,1,2,Propia
+CL443,Bogotá,Colombia,90387,HealthPlus,90,2,3,Propia
+CL444,Medellín,Colombia,42313,RetailCo,100,4,1,Familiar
+CL445,Cali,Colombia,71669,GlobalBank,86,4,2,Propia
+CL446,Bogotá,Colombia,16366,GlobalBank,40,0,2,Propia
+CL447,Bogotá,Colombia,11271,RetailCo,97,3,0,Alquilada
+CL448,Bogotá,Colombia,11035,HealthPlus,100,4,2,Alquilada
+CL449,Bogotá,Colombia,59341,TechSolutions,108,2,3,Propia
+CL450,Bogotá,Colombia,52261,RetailCo,55,2,3,Alquilada
+CL451,Barranquilla,Colombia,48274,,4,2,3,Alquilada
+CL452,Cartagena,Colombia,81141,RetailCo,34,0,1,Ninguna
+CL453,Cali,Colombia,12157,HealthPlus,67,3,0,Alquilada
+CL454,Medellín,Colombia,96319,TechSolutions,106,0,0,Familiar
+CL455,Bogotá,Colombia,18680,Acme Corp,65,1,3,Propia
+CL456,Medellín,Colombia,66548,RetailCo,6,3,1,Propia
+CL457,Bogotá,Colombia,72102,EduFuture,57,3,2,Ninguna
+CL458,Cali,Colombia,75511,Acme Corp,100,2,3,Familiar
+CL459,Cali,Colombia,32133,Acme Corp,45,0,0,Propia
+CL460,Medellín,Colombia,11215,Acme Corp,9,4,1,Ninguna
+CL461,Bogotá,Colombia,10518,RetailCo,52,1,0,Propia
+CL462,Cali,Colombia,25940,EduFuture,78,0,3,Ninguna
+CL463,Cartagena,Colombia,10611,RetailCo,94,4,0,Propia
+CL464,Cartagena,Colombia,50354,TechSolutions,32,1,3,Ninguna
+CL465,Bogotá,Colombia,39280,RetailCo,36,2,3,Familiar
+CL466,Cartagena,Colombia,54412,Acme Corp,82,2,0,Ninguna
+CL467,Cartagena,Colombia,87574,RetailCo,38,1,2,Alquilada
+CL468,Barranquilla,Colombia,26485,Acme Corp,22,0,1,Familiar
+CL469,Medellín,Colombia,27069,Acme Corp,61,3,2,Alquilada
+CL470,Cali,Colombia,55042,EduFuture,28,1,2,Ninguna
+CL471,Bogotá,Colombia,26027,RetailCo,66,1,3,Propia
+CL472,Cali,Colombia,26293,,44,3,3,Familiar
+CL473,Cali,Colombia,50746,Acme Corp,82,3,3,Alquilada
+CL474,Medellín,Colombia,25339,GlobalBank,90,2,2,Familiar
+CL475,Barranquilla,Colombia,72894,RetailCo,11,3,1,Ninguna
+CL476,Bogotá,Colombia,22827,HealthPlus,87,2,3,Alquilada
+CL477,Medellín,Colombia,98067,,82,3,0,Familiar
+CL478,Cartagena,Colombia,97686,Acme Corp,47,2,0,Propia
+CL479,Bogotá,Colombia,93216,GlobalBank,43,3,0,Propia
+CL480,Cartagena,Colombia,46957,RetailCo,3,0,3,Alquilada
+CL481,Barranquilla,Colombia,94003,TechSolutions,59,2,0,Propia
+CL482,Medellín,Colombia,93460,TechSolutions,68,3,0,Alquilada
+CL483,Barranquilla,Colombia,25685,,112,4,1,Familiar
+CL484,Medellín,Colombia,53167,HealthPlus,5,0,3,Propia
+CL485,Medellín,Colombia,22750,HealthPlus,12,4,2,Familiar
+CL486,Cartagena,Colombia,32204,GlobalBank,89,1,2,Alquilada
+CL487,Cartagena,Colombia,57337,TechSolutions,58,0,2,Alquilada
+CL488,Bogotá,Colombia,13772,,91,3,2,Familiar
+CL489,Bogotá,Colombia,95376,RetailCo,36,2,0,Propia
+CL490,Barranquilla,Colombia,86740,EduFuture,41,4,1,Alquilada
+CL491,Cali,Colombia,25112,RetailCo,43,2,3,Alquilada
+CL492,Bogotá,Colombia,11518,EduFuture,31,4,3,Ninguna
+CL493,Cali,Colombia,27920,RetailCo,106,2,0,Alquilada
+CL494,Medellín,Colombia,35351,EduFuture,81,4,2,Alquilada
+CL495,Medellín,Colombia,49566,,76,0,0,Alquilada
+CL496,Medellín,Colombia,60935,TechSolutions,77,4,3,Familiar
+CL497,Barranquilla,Colombia,87619,TechSolutions,48,2,2,Ninguna
+CL498,Cartagena,Colombia,11595,HealthPlus,44,2,2,Familiar
+CL499,Bogotá,Colombia,34977,EduFuture,70,1,1,Alquilada
+CL500,Bogotá,Colombia,94856,RetailCo,35,0,0,Ninguna
+CL501,Cartagena,Colombia,14379,,65,4,2,Ninguna
+CL502,Cartagena,Colombia,50011,TechSolutions,68,1,3,Ninguna
+CL503,Cartagena,Colombia,79312,TechSolutions,72,1,3,Familiar
+CL504,Bogotá,Colombia,86094,EduFuture,120,3,3,Propia
+CL505,Cali,Colombia,71049,EduFuture,71,0,0,Familiar
+CL506,Cali,Colombia,25979,RetailCo,30,0,2,Ninguna
+CL507,Bogotá,Colombia,86336,,21,4,1,Alquilada
+CL508,Cartagena,Colombia,92176,EduFuture,49,1,2,Familiar
+CL509,Cali,Colombia,76102,HealthPlus,22,1,3,Alquilada
+CL510,Medellín,Colombia,95695,HealthPlus,20,4,2,Familiar
+CL511,Medellín,Colombia,94691,,76,4,0,Propia
+CL512,Bogotá,Colombia,93853,GlobalBank,108,2,3,Familiar
+CL513,Bogotá,Colombia,79219,RetailCo,59,1,3,Propia
+CL514,Medellín,Colombia,58106,Acme Corp,89,3,2,Familiar
+CL515,Medellín,Colombia,22635,Acme Corp,43,1,2,Ninguna
+CL516,Cartagena,Colombia,19744,EduFuture,95,3,0,Propia
+CL517,Cartagena,Colombia,95672,Acme Corp,4,1,0,Propia
+CL518,Cali,Colombia,42164,GlobalBank,85,1,3,Familiar
+CL519,Barranquilla,Colombia,22840,HealthPlus,82,1,3,Alquilada
+CL520,Cali,Colombia,26891,GlobalBank,80,2,3,Alquilada
+CL521,Cali,Colombia,65594,,5,0,1,Familiar
+CL522,Cartagena,Colombia,94406,RetailCo,48,2,1,Propia
+CL523,Medellín,Colombia,48758,,52,0,3,Alquilada
+CL524,Cali,Colombia,71550,Acme Corp,11,4,0,Alquilada
+CL525,Cali,Colombia,77385,EduFuture,64,1,0,Ninguna
+CL526,Barranquilla,Colombia,98406,TechSolutions,88,4,1,Ninguna
+CL527,Cali,Colombia,10268,HealthPlus,78,3,3,Familiar
+CL528,Barranquilla,Colombia,42928,EduFuture,64,4,2,Alquilada
+CL529,Bogotá,Colombia,21404,HealthPlus,25,1,1,Alquilada
+CL530,Bogotá,Colombia,13815,HealthPlus,109,1,2,Propia
+CL531,Bogotá,Colombia,70767,TechSolutions,113,3,2,Alquilada
+CL532,Barranquilla,Colombia,54023,,66,2,3,Alquilada
+CL533,Cali,Colombia,26707,EduFuture,63,2,1,Familiar
+CL534,Medellín,Colombia,27937,,7,2,0,Alquilada
+CL535,Cali,Colombia,47508,Acme Corp,105,4,0,Familiar
+CL536,Barranquilla,Colombia,15380,EduFuture,81,1,2,Familiar
+CL537,Cartagena,Colombia,17450,TechSolutions,110,3,1,Familiar
+CL538,Cali,Colombia,11620,EduFuture,23,3,1,Familiar
+CL539,Bogotá,Colombia,94723,TechSolutions,55,0,3,Familiar
+CL540,Medellín,Colombia,20962,GlobalBank,109,2,0,Alquilada
+CL541,Bogotá,Colombia,33299,RetailCo,65,3,0,Propia
+CL542,Medellín,Colombia,28715,Acme Corp,111,1,3,Propia
+CL543,Cali,Colombia,38320,EduFuture,75,4,1,Alquilada
+CL544,Cali,Colombia,30312,TechSolutions,76,4,3,Familiar
+CL545,Barranquilla,Colombia,98818,RetailCo,38,2,0,Alquilada
+CL546,Bogotá,Colombia,29196,HealthPlus,54,0,3,Ninguna
+CL547,Cartagena,Colombia,66268,Acme Corp,58,3,2,Familiar
+CL548,Barranquilla,Colombia,95008,RetailCo,17,0,3,Propia
+CL549,Bogotá,Colombia,74714,HealthPlus,14,1,2,Alquilada
+CL550,Cartagena,Colombia,40760,TechSolutions,12,1,2,Propia
+CL551,Bogotá,Colombia,21624,EduFuture,95,3,0,Familiar
+CL552,Cali,Colombia,45241,TechSolutions,26,0,0,Alquilada
+CL553,Barranquilla,Colombia,59430,TechSolutions,46,3,2,Familiar
+CL554,Cartagena,Colombia,61827,HealthPlus,91,3,2,Ninguna
+CL555,Cali,Colombia,52656,GlobalBank,4,2,3,Familiar
+CL556,Cali,Colombia,96095,Acme Corp,73,2,1,Familiar
+CL557,Barranquilla,Colombia,26767,GlobalBank,36,4,1,Familiar
+CL558,Medellín,Colombia,97224,Acme Corp,69,2,0,Propia
+CL559,Cartagena,Colombia,57233,GlobalBank,102,4,2,Ninguna
+CL560,Medellín,Colombia,58988,,96,0,2,Ninguna
+CL561,Cali,Colombia,58619,TechSolutions,33,1,2,Familiar
+CL562,Bogotá,Colombia,95759,TechSolutions,20,4,0,Alquilada
+CL563,Cartagena,Colombia,30064,HealthPlus,1,1,3,Familiar
+CL564,Bogotá,Colombia,83514,Acme Corp,105,2,3,Ninguna
+CL565,Cartagena,Colombia,93410,EduFuture,58,1,1,Familiar
+CL566,Barranquilla,Colombia,31370,Acme Corp,13,4,3,Ninguna
+CL567,Medellín,Colombia,21780,Acme Corp,7,4,3,Ninguna
+CL568,Cartagena,Colombia,36255,Acme Corp,21,4,3,Ninguna
+CL569,Barranquilla,Colombia,94469,RetailCo,45,1,2,Propia
+CL570,Medellín,Colombia,82102,,109,4,2,Ninguna
+CL571,Bogotá,Colombia,91148,Acme Corp,85,3,1,Propia
+CL572,Cali,Colombia,44815,EduFuture,52,4,1,Alquilada
+CL573,Medellín,Colombia,82949,RetailCo,102,2,2,Propia
+CL574,Barranquilla,Colombia,97743,GlobalBank,14,0,1,Familiar
+CL575,Cali,Colombia,62972,HealthPlus,57,1,0,Propia
+CL576,Bogotá,Colombia,44070,EduFuture,85,0,0,Alquilada
+CL577,Cali,Colombia,73498,,17,3,2,Ninguna
+CL578,Cali,Colombia,11846,Acme Corp,11,0,0,Familiar
+CL579,Cali,Colombia,67034,,54,1,0,Propia
+CL580,Barranquilla,Colombia,13454,RetailCo,117,4,2,Familiar
+CL581,Barranquilla,Colombia,54698,HealthPlus,90,4,1,Alquilada
+CL582,Cali,Colombia,77859,Acme Corp,113,1,2,Propia
+CL583,Medellín,Colombia,23635,,37,3,3,Ninguna
+CL584,Cartagena,Colombia,86360,HealthPlus,36,4,2,Ninguna
+CL585,Bogotá,Colombia,21411,,43,4,0,Propia
+CL586,Medellín,Colombia,24945,GlobalBank,41,1,3,Propia
+CL587,Barranquilla,Colombia,69741,RetailCo,26,0,2,Alquilada
+CL588,Bogotá,Colombia,98286,Acme Corp,119,0,1,Ninguna
+CL589,Medellín,Colombia,52488,Acme Corp,117,4,1,Propia
+CL590,Bogotá,Colombia,93447,Acme Corp,94,3,0,Ninguna
+CL591,Bogotá,Colombia,39581,GlobalBank,90,2,3,Propia
+CL592,Bogotá,Colombia,72703,HealthPlus,57,1,0,Ninguna
+CL593,Medellín,Colombia,60091,GlobalBank,8,0,3,Alquilada
+CL594,Cali,Colombia,52000,EduFuture,44,1,2,Familiar
+CL595,Bogotá,Colombia,45314,HealthPlus,79,3,1,Propia
+CL596,Barranquilla,Colombia,75781,,77,1,3,Alquilada
+CL597,Bogotá,Colombia,52046,EduFuture,45,3,0,Ninguna
+CL598,Cartagena,Colombia,80121,EduFuture,106,4,1,Ninguna
+CL599,Cali,Colombia,97803,GlobalBank,3,0,2,Propia
+CL600,Medellín,Colombia,98284,Acme Corp,117,1,3,Propia
+CL601,Medellín,Colombia,99414,TechSolutions,51,2,3,Familiar
+CL602,Medellín,Colombia,72423,HealthPlus,9,0,2,Alquilada
+CL603,Medellín,Colombia,75357,TechSolutions,25,3,2,Familiar
+CL604,Bogotá,Colombia,35734,GlobalBank,40,3,3,Propia
+CL605,Barranquilla,Colombia,25599,GlobalBank,23,3,0,Ninguna
+CL606,Cartagena,Colombia,48898,EduFuture,50,4,1,Familiar
+CL607,Barranquilla,Colombia,77397,EduFuture,25,4,3,Familiar
+CL608,Medellín,Colombia,68658,EduFuture,15,3,3,Familiar
+CL609,Bogotá,Colombia,84855,RetailCo,11,2,2,Familiar
+CL610,Medellín,Colombia,56221,Acme Corp,110,1,1,Alquilada
+CL611,Barranquilla,Colombia,26185,TechSolutions,34,4,0,Familiar
+CL612,Barranquilla,Colombia,30863,HealthPlus,34,1,2,Propia
+CL613,Bogotá,Colombia,57168,,77,3,2,Familiar
+CL614,Cali,Colombia,53351,RetailCo,70,1,3,Alquilada
+CL615,Cali,Colombia,70133,RetailCo,24,0,2,Propia
+CL616,Bogotá,Colombia,67160,EduFuture,104,4,1,Familiar
+CL617,Cali,Colombia,31996,GlobalBank,16,4,2,Propia
+CL618,Cali,Colombia,47965,EduFuture,76,0,0,Ninguna
+CL619,Bogotá,Colombia,12603,HealthPlus,64,0,3,Ninguna
+CL620,Medellín,Colombia,26545,GlobalBank,4,4,1,Alquilada
+CL621,Cartagena,Colombia,38257,RetailCo,119,0,0,Alquilada
+CL622,Barranquilla,Colombia,71443,TechSolutions,30,4,2,Alquilada
+CL623,Barranquilla,Colombia,83163,EduFuture,108,1,2,Ninguna
+CL624,Barranquilla,Colombia,13238,,19,3,3,Alquilada
+CL625,Medellín,Colombia,18768,EduFuture,22,2,3,Propia
+CL626,Medellín,Colombia,57177,HealthPlus,63,1,0,Ninguna
+CL627,Medellín,Colombia,53094,TechSolutions,102,3,1,Ninguna
+CL628,Medellín,Colombia,80650,,49,4,0,Alquilada
+CL629,Medellín,Colombia,61463,Acme Corp,105,4,2,Alquilada
+CL630,Cali,Colombia,90449,RetailCo,53,4,1,Alquilada
+CL631,Cali,Colombia,86669,EduFuture,84,1,1,Ninguna
+CL632,Bogotá,Colombia,86458,Acme Corp,76,2,3,Propia
+CL633,Cali,Colombia,72384,EduFuture,27,0,0,Alquilada
+CL634,Medellín,Colombia,13693,RetailCo,48,3,2,Familiar
+CL635,Medellín,Colombia,20685,GlobalBank,71,4,3,Ninguna
+CL636,Barranquilla,Colombia,50140,EduFuture,20,4,3,Familiar
+CL637,Cartagena,Colombia,94399,EduFuture,95,1,1,Propia
+CL638,Bogotá,Colombia,81586,,84,1,0,Alquilada
+CL639,Medellín,Colombia,21362,GlobalBank,91,3,1,Alquilada
+CL640,Medellín,Colombia,10834,EduFuture,27,3,0,Ninguna
+CL641,Medellín,Colombia,34223,TechSolutions,65,3,2,Ninguna
+CL642,Medellín,Colombia,40538,Acme Corp,9,0,1,Propia
+CL643,Cali,Colombia,48599,EduFuture,107,0,3,Propia
+CL644,Cali,Colombia,18331,TechSolutions,32,3,1,Familiar
+CL645,Cartagena,Colombia,72718,,83,0,0,Familiar
+CL646,Barranquilla,Colombia,81257,RetailCo,113,4,3,Ninguna
+CL647,Medellín,Colombia,24161,EduFuture,54,2,1,Ninguna
+CL648,Bogotá,Colombia,95618,TechSolutions,110,0,1,Ninguna
+CL649,Bogotá,Colombia,65162,EduFuture,68,0,1,Alquilada
+CL650,Bogotá,Colombia,94214,RetailCo,57,1,3,Ninguna
+CL651,Cartagena,Colombia,60372,TechSolutions,74,0,0,Alquilada
+CL652,Barranquilla,Colombia,69841,GlobalBank,9,1,1,Propia
+CL653,Barranquilla,Colombia,96079,HealthPlus,45,3,3,Alquilada
+CL654,Bogotá,Colombia,54419,Acme Corp,88,4,1,Alquilada
+CL655,Cali,Colombia,11299,,92,2,3,Alquilada
+CL656,Medellín,Colombia,12893,Acme Corp,76,1,2,Propia
+CL657,Cali,Colombia,68515,GlobalBank,66,4,1,Familiar
+CL658,Barranquilla,Colombia,22972,,71,1,1,Familiar
+CL659,Cali,Colombia,64948,HealthPlus,19,0,3,Propia
+CL660,Bogotá,Colombia,94586,EduFuture,3,0,2,Ninguna
+CL661,Medellín,Colombia,39259,RetailCo,36,1,3,Alquilada
+CL662,Cali,Colombia,32694,Acme Corp,67,4,2,Propia
+CL663,Cartagena,Colombia,90601,Acme Corp,85,0,2,Propia
+CL664,Cali,Colombia,70785,,37,4,3,Alquilada
+CL665,Cali,Colombia,26678,Acme Corp,53,4,3,Ninguna
+CL666,Bogotá,Colombia,42063,HealthPlus,36,1,2,Propia
+CL667,Bogotá,Colombia,58805,TechSolutions,32,2,1,Propia
+CL668,Cali,Colombia,27710,,74,0,0,Ninguna
+CL669,Bogotá,Colombia,62495,GlobalBank,114,0,2,Propia
+CL670,Barranquilla,Colombia,70697,GlobalBank,63,3,1,Alquilada
+CL671,Barranquilla,Colombia,97926,GlobalBank,27,3,3,Ninguna
+CL672,Cali,Colombia,47023,HealthPlus,80,4,2,Ninguna
+CL673,Barranquilla,Colombia,53991,,84,0,1,Alquilada
+CL674,Medellín,Colombia,56944,Acme Corp,35,3,0,Propia
+CL675,Cartagena,Colombia,52041,RetailCo,18,3,3,Familiar
+CL676,Barranquilla,Colombia,14940,EduFuture,103,3,0,Alquilada
+CL677,Medellín,Colombia,14842,HealthPlus,106,2,2,Ninguna
+CL678,Cartagena,Colombia,89730,RetailCo,101,1,3,Alquilada
+CL679,Bogotá,Colombia,27335,,106,1,0,Familiar
+CL680,Cartagena,Colombia,93158,GlobalBank,89,3,3,Alquilada
+CL681,Bogotá,Colombia,95000,GlobalBank,28,1,3,Propia
+CL682,Barranquilla,Colombia,32789,TechSolutions,53,1,0,Ninguna
+CL683,Barranquilla,Colombia,25421,EduFuture,29,3,3,Propia
+CL684,Cali,Colombia,61967,Acme Corp,79,4,3,Propia
+CL685,Cartagena,Colombia,93980,Acme Corp,71,3,0,Ninguna
+CL686,Cartagena,Colombia,60409,RetailCo,75,4,1,Familiar
+CL687,Barranquilla,Colombia,95178,Acme Corp,8,2,2,Ninguna
+CL688,Barranquilla,Colombia,73889,,87,1,2,Alquilada
+CL689,Medellín,Colombia,69046,,36,1,0,Ninguna
+CL690,Barranquilla,Colombia,77199,GlobalBank,23,3,0,Ninguna
+CL691,Bogotá,Colombia,97803,Acme Corp,25,3,2,Ninguna
+CL692,Barranquilla,Colombia,50032,EduFuture,54,3,0,Familiar
+CL693,Cali,Colombia,39048,HealthPlus,36,4,1,Ninguna
+CL694,Cali,Colombia,20934,HealthPlus,41,4,0,Ninguna
+CL695,Bogotá,Colombia,11710,Acme Corp,111,1,2,Propia
+CL696,Barranquilla,Colombia,79191,EduFuture,119,1,0,Ninguna
+CL697,Cali,Colombia,15934,TechSolutions,97,2,1,Alquilada
+CL698,Cali,Colombia,44352,GlobalBank,9,0,0,Alquilada
+CL699,Barranquilla,Colombia,32884,Acme Corp,10,1,1,Propia
+CL700,Cali,Colombia,63900,Acme Corp,81,4,1,Alquilada
+CL701,Medellín,Colombia,79147,,79,1,3,Propia
+CL702,Cali,Colombia,88244,RetailCo,80,3,1,Ninguna
+CL703,Medellín,Colombia,42075,TechSolutions,20,4,1,Alquilada
+CL704,Bogotá,Colombia,97161,Acme Corp,116,0,1,Alquilada
+CL705,Barranquilla,Colombia,32310,EduFuture,89,2,1,Propia
+CL706,Bogotá,Colombia,28540,GlobalBank,2,0,3,Alquilada
+CL707,Barranquilla,Colombia,27101,GlobalBank,13,3,2,Ninguna
+CL708,Bogotá,Colombia,15735,Acme Corp,52,2,1,Familiar
+CL709,Cali,Colombia,69406,RetailCo,56,4,0,Alquilada
+CL710,Bogotá,Colombia,87582,Acme Corp,111,1,3,Ninguna
+CL711,Cali,Colombia,86791,RetailCo,78,4,0,Familiar
+CL712,Cali,Colombia,51327,Acme Corp,87,4,1,Propia
+CL713,Bogotá,Colombia,93380,TechSolutions,100,3,1,Ninguna
+CL714,Cali,Colombia,82228,TechSolutions,105,4,3,Alquilada
+CL715,Medellín,Colombia,53437,TechSolutions,74,4,1,Ninguna
+CL716,Cartagena,Colombia,47955,GlobalBank,29,3,2,Propia
+CL717,Barranquilla,Colombia,19844,RetailCo,24,3,2,Propia
+CL718,Barranquilla,Colombia,80295,GlobalBank,54,2,1,Alquilada
+CL719,Cali,Colombia,94967,Acme Corp,53,2,1,Propia
+CL720,Cali,Colombia,29097,GlobalBank,67,1,1,Ninguna
+CL721,Bogotá,Colombia,89783,Acme Corp,50,2,2,Familiar
+CL722,Medellín,Colombia,69144,TechSolutions,34,4,2,Familiar
+CL723,Barranquilla,Colombia,25478,TechSolutions,108,1,1,Ninguna
+CL724,Cartagena,Colombia,59957,Acme Corp,54,1,2,Alquilada
+CL725,Cali,Colombia,39273,Acme Corp,85,4,0,Ninguna
+CL726,Cali,Colombia,38495,RetailCo,96,1,2,Familiar
+CL727,Bogotá,Colombia,53666,TechSolutions,99,0,2,Familiar
+CL728,Medellín,Colombia,29370,GlobalBank,19,0,2,Alquilada
+CL729,Medellín,Colombia,64207,RetailCo,63,1,0,Ninguna
+CL730,Medellín,Colombia,59630,RetailCo,15,1,0,Ninguna
+CL731,Bogotá,Colombia,60300,TechSolutions,85,4,2,Familiar
+CL732,Barranquilla,Colombia,15487,Acme Corp,104,1,1,Propia
+CL733,Cartagena,Colombia,30793,RetailCo,112,3,3,Ninguna
+CL734,Cali,Colombia,86672,GlobalBank,14,1,3,Propia
+CL735,Cali,Colombia,51143,HealthPlus,4,1,3,Alquilada
+CL736,Cartagena,Colombia,92949,Acme Corp,99,1,1,Propia
+CL737,Medellín,Colombia,17118,Acme Corp,86,0,1,Propia
+CL738,Medellín,Colombia,21700,Acme Corp,8,4,0,Propia
+CL739,Cali,Colombia,84364,TechSolutions,105,4,1,Propia
+CL740,Barranquilla,Colombia,10481,TechSolutions,110,4,3,Propia
+CL741,Barranquilla,Colombia,53810,Acme Corp,115,2,0,Ninguna
+CL742,Barranquilla,Colombia,76026,EduFuture,108,1,3,Familiar
+CL743,Bogotá,Colombia,47415,Acme Corp,103,0,3,Alquilada
+CL744,Barranquilla,Colombia,46879,,18,4,2,Familiar
+CL745,Bogotá,Colombia,58273,TechSolutions,66,3,0,Ninguna
+CL746,Cali,Colombia,86171,Acme Corp,41,2,1,Alquilada
+CL747,Barranquilla,Colombia,16720,GlobalBank,71,1,1,Alquilada
+CL748,Barranquilla,Colombia,71539,Acme Corp,90,2,3,Familiar
+CL749,Cali,Colombia,50899,GlobalBank,102,4,3,Alquilada
+CL750,Bogotá,Colombia,33798,GlobalBank,109,1,2,Ninguna
+CL751,Cali,Colombia,63080,Acme Corp,40,3,1,Familiar
+CL752,Cali,Colombia,76934,GlobalBank,20,1,0,Propia
+CL753,Cartagena,Colombia,11906,Acme Corp,96,2,1,Propia
+CL754,Cali,Colombia,15211,Acme Corp,56,0,3,Propia
+CL755,Cartagena,Colombia,66460,HealthPlus,84,0,2,Alquilada
+CL756,Medellín,Colombia,11443,TechSolutions,35,0,1,Familiar
+CL757,Barranquilla,Colombia,14103,EduFuture,91,0,2,Familiar
+CL758,Cali,Colombia,32934,TechSolutions,29,2,3,Familiar
+CL759,Cartagena,Colombia,19804,GlobalBank,16,4,0,Alquilada
+CL760,Bogotá,Colombia,42810,TechSolutions,88,4,0,Familiar
+CL761,Barranquilla,Colombia,20989,RetailCo,36,3,1,Propia
+CL762,Cartagena,Colombia,52705,TechSolutions,60,4,0,Familiar
+CL763,Medellín,Colombia,96322,GlobalBank,106,3,1,Ninguna
+CL764,Barranquilla,Colombia,60711,EduFuture,39,0,0,Ninguna
+CL765,Bogotá,Colombia,26700,RetailCo,72,1,3,Propia
+CL766,Bogotá,Colombia,36054,,51,1,2,Alquilada
+CL767,Cali,Colombia,92951,GlobalBank,85,0,0,Ninguna
+CL768,Bogotá,Colombia,97895,RetailCo,26,4,2,Alquilada
+CL769,Bogotá,Colombia,29907,EduFuture,47,2,2,Propia
+CL770,Medellín,Colombia,53914,RetailCo,41,2,3,Alquilada
+CL771,Cali,Colombia,99918,TechSolutions,12,4,1,Ninguna
+CL772,Bogotá,Colombia,12712,Acme Corp,111,3,1,Ninguna
+CL773,Cali,Colombia,82572,,54,0,0,Familiar
+CL774,Cartagena,Colombia,48946,,61,3,0,Ninguna
+CL775,Cali,Colombia,74601,EduFuture,66,4,3,Alquilada
+CL776,Cartagena,Colombia,78238,HealthPlus,64,2,1,Alquilada
+CL777,Cartagena,Colombia,35952,,92,4,2,Alquilada
+CL778,Cartagena,Colombia,51983,,102,4,0,Familiar
+CL779,Barranquilla,Colombia,84779,RetailCo,51,1,2,Alquilada
+CL780,Barranquilla,Colombia,56470,RetailCo,42,4,0,Alquilada
+CL781,Medellín,Colombia,24817,,42,1,2,Alquilada
+CL782,Cali,Colombia,18488,RetailCo,25,0,1,Familiar
+CL783,Cali,Colombia,27006,Acme Corp,39,4,2,Ninguna
+CL784,Cali,Colombia,54397,Acme Corp,58,2,1,Propia
+CL785,Barranquilla,Colombia,89488,,24,3,1,Propia
+CL786,Cali,Colombia,87027,HealthPlus,100,1,0,Familiar
+CL787,Bogotá,Colombia,57629,HealthPlus,24,3,2,Familiar
+CL788,Cali,Colombia,34417,GlobalBank,118,4,3,Ninguna
+CL789,Cartagena,Colombia,10404,,16,4,2,Ninguna
+CL790,Cartagena,Colombia,23477,Acme Corp,55,0,0,Propia
+CL791,Barranquilla,Colombia,73516,GlobalBank,86,2,1,Familiar
+CL792,Cartagena,Colombia,49886,RetailCo,108,4,3,Propia
+CL793,Cartagena,Colombia,94539,,98,2,0,Familiar
+CL794,Bogotá,Colombia,52786,Acme Corp,12,0,0,Alquilada
+CL795,Cali,Colombia,11955,HealthPlus,88,0,2,Familiar
+CL796,Cartagena,Colombia,72708,Acme Corp,8,2,3,Ninguna
+CL797,Medellín,Colombia,17955,TechSolutions,81,3,0,Alquilada
+CL798,Cartagena,Colombia,24541,Acme Corp,117,4,2,Alquilada
+CL799,Medellín,Colombia,69765,Acme Corp,6,0,1,Ninguna
+CL800,Cali,Colombia,60517,HealthPlus,118,0,3,Alquilada
+CL801,Medellín,Colombia,82822,RetailCo,96,3,0,Familiar
+CL802,Cartagena,Colombia,45769,RetailCo,115,2,3,Propia
+CL803,Barranquilla,Colombia,84986,RetailCo,111,2,2,Propia
+CL804,Cali,Colombia,33282,,114,2,1,Ninguna
+CL805,Pereira,Colombia,51105,RetailCo,8,4,0,Propia
+CL806,Barranquilla,Colombia,93612,Acme Corp,44,1,3,Familiar
+CL807,Cali,Colombia,39022,,9,3,1,Alquilada
+CL808,Bogotá,Colombia,13420,,32,0,0,Familiar
+CL809,Pereira,Colombia,55991,,84,1,0,Alquilada
+CL810,Medellín,Colombia,50966,Acme Corp,111,4,3,Alquilada
+CL811,Bogotá,Colombia,21458,GlobalBank,76,3,1,Ninguna
+CL812,Barranquilla,Colombia,63450,EduFuture,33,2,2,Propia
+CL813,Pereira,Colombia,29711,Acme Corp,112,4,0,Ninguna
+CL814,Bogotá,Colombia,60080,TechSolutions,112,1,0,Ninguna
+CL815,Cartagena,Colombia,86564,GlobalBank,17,3,0,Alquilada
+CL816,Medellín,Colombia,11897,Acme Corp,97,1,0,Alquilada
+CL817,Cartagena,Colombia,24858,GlobalBank,40,1,2,Familiar
+CL818,Pereira,Colombia,29980,EduFuture,32,4,0,Propia
+CL819,Medellín,Colombia,25082,Acme Corp,43,4,3,Propia
+CL820,Bogotá,Colombia,34446,RetailCo,34,2,1,Alquilada
+CL821,Barranquilla,Colombia,10947,RetailCo,19,2,3,Ninguna
+CL822,Medellín,Colombia,33491,RetailCo,22,4,0,Ninguna
+CL823,Bogotá,Colombia,31511,TechSolutions,94,1,0,Familiar
+CL824,Cali,Colombia,50138,Acme Corp,80,1,2,Alquilada
+CL825,Barranquilla,Colombia,76921,RetailCo,100,4,3,Propia
+CL826,Cali,Colombia,82134,Acme Corp,28,0,3,Ninguna
+CL827,Cali,Colombia,61972,RetailCo,74,1,0,Propia
+CL828,Pereira,Colombia,93081,EduFuture,5,1,3,Familiar
+CL829,Pereira,Colombia,53426,HealthPlus,104,3,3,Propia
+CL830,Medellín,Colombia,44854,TechSolutions,72,1,1,Alquilada
+CL831,Cali,Colombia,45409,TechSolutions,106,0,2,Ninguna
+CL832,Bogotá,Colombia,50362,TechSolutions,63,1,0,Familiar
+CL833,Bogotá,Colombia,35310,EduFuture,46,2,0,Familiar
+CL834,Cartagena,Colombia,24531,,55,0,0,Propia
+CL835,Medellín,Colombia,79210,GlobalBank,19,2,3,Propia
+CL836,Cartagena,Colombia,61748,,23,1,1,Ninguna
+CL837,Pereira,Colombia,79845,HealthPlus,19,2,0,Alquilada
+CL838,Barranquilla,Colombia,72506,TechSolutions,61,3,0,Familiar
+CL839,Cali,Colombia,56850,EduFuture,2,4,2,Alquilada
+CL840,Bogotá,Colombia,11963,TechSolutions,110,2,2,Ninguna
+CL841,Cartagena,Colombia,44947,TechSolutions,8,3,2,Alquilada
+CL842,Bogotá,Colombia,89385,,61,3,0,Alquilada
+CL843,Barranquilla,Colombia,77189,EduFuture,67,4,0,Propia
+CL844,Pereira,Colombia,33526,TechSolutions,52,4,2,Propia
+CL845,Cartagena,Colombia,16677,,106,3,1,Familiar
+CL846,Cali,Colombia,28679,Acme Corp,48,1,0,Alquilada
+CL847,Bogotá,Colombia,65309,RetailCo,44,3,0,Alquilada
+CL848,Cartagena,Colombia,75345,GlobalBank,92,1,1,Familiar
+CL849,Cartagena,Colombia,12618,RetailCo,120,4,0,Propia
+CL850,Medellín,Colombia,67326,,8,2,2,Ninguna
+CL851,Cali,Colombia,26965,Acme Corp,36,1,2,Familiar
+CL852,Pereira,Colombia,80275,TechSolutions,59,0,0,Familiar
+CL853,Cali,Colombia,70059,,51,4,1,Alquilada
+CL854,Cartagena,Colombia,65838,TechSolutions,46,4,2,Ninguna
+CL855,Pereira,Colombia,12435,HealthPlus,88,1,0,Ninguna
+CL856,Barranquilla,Colombia,87929,RetailCo,87,4,2,Propia
+CL857,Cali,Colombia,39606,Acme Corp,34,2,1,Propia
+CL858,Pereira,Colombia,89968,HealthPlus,39,0,3,Alquilada
+CL859,Pereira,Colombia,91241,GlobalBank,80,0,3,Propia
+CL860,Bogotá,Colombia,91830,HealthPlus,120,2,0,Ninguna
+CL861,Medellín,Colombia,41395,EduFuture,63,1,2,Propia
+CL862,Bogotá,Colombia,85978,Acme Corp,116,4,1,Alquilada
+CL863,Bogotá,Colombia,78260,HealthPlus,89,4,1,Familiar
+CL864,Cartagena,Colombia,18639,,33,3,1,Ninguna
+CL865,Barranquilla,Colombia,61000,TechSolutions,75,0,0,Propia
+CL866,Cartagena,Colombia,25414,EduFuture,90,0,3,Alquilada
+CL867,Pereira,Colombia,31015,,13,4,2,Propia
+CL868,Cali,Colombia,94232,Acme Corp,79,3,1,Familiar
+CL869,Cartagena,Colombia,61444,Acme Corp,58,0,3,Ninguna
+CL870,Cali,Colombia,48047,GlobalBank,100,0,3,Familiar
+CL871,Pereira,Colombia,61841,EduFuture,85,3,0,Familiar
+CL872,Barranquilla,Colombia,75048,RetailCo,117,4,0,Propia
+CL873,Bogotá,Colombia,92577,TechSolutions,72,4,2,Ninguna
+CL874,Pereira,Colombia,80906,HealthPlus,120,0,0,Alquilada
+CL875,Cartagena,Colombia,34536,Acme Corp,16,3,0,Familiar
+CL876,Cartagena,Colombia,48483,HealthPlus,49,4,3,Propia
+CL877,Cali,Colombia,98055,HealthPlus,75,3,1,Alquilada
+CL878,Barranquilla,Colombia,88108,GlobalBank,68,0,1,Alquilada
+CL879,Pereira,Colombia,59007,TechSolutions,76,2,2,Propia
+CL880,Pereira,Colombia,96707,Acme Corp,45,2,2,Alquilada
+CL881,Bogotá,Colombia,50524,TechSolutions,113,0,2,Alquilada
+CL882,Bogotá,Colombia,64853,RetailCo,53,2,0,Familiar
+CL883,Bogotá,Colombia,35980,HealthPlus,85,2,0,Alquilada
+CL884,Cartagena,Colombia,80909,,12,3,3,Alquilada
+CL885,Medellín,Colombia,34456,HealthPlus,21,0,0,Propia
+CL886,Medellín,Colombia,97912,,70,2,2,Ninguna
+CL887,Medellín,Colombia,84141,Acme Corp,108,2,2,Propia
+CL888,Cali,Colombia,97122,TechSolutions,14,4,1,Ninguna
+CL889,Pereira,Colombia,28566,TechSolutions,117,0,0,Ninguna
+CL890,Medellín,Colombia,62183,Acme Corp,62,3,0,Alquilada
+CL891,Cali,Colombia,26876,Acme Corp,40,2,0,Familiar
+CL892,Barranquilla,Colombia,81097,RetailCo,18,0,3,Alquilada
+CL893,Barranquilla,Colombia,99046,EduFuture,73,4,2,Familiar
+CL894,Pereira,Colombia,17281,,117,0,1,Ninguna
+CL895,Barranquilla,Colombia,33806,,113,4,1,Ninguna
+CL896,Barranquilla,Colombia,43016,Acme Corp,65,3,2,Ninguna
+CL897,Pereira,Colombia,15078,Acme Corp,102,1,1,Familiar
+CL898,Pereira,Colombia,74327,Acme Corp,29,2,1,Familiar
+CL899,Pereira,Colombia,59150,TechSolutions,35,0,3,Ninguna
+CL900,Bogotá,Colombia,72965,EduFuture,114,4,3,Ninguna
+CL901,Barranquilla,Colombia,88020,EduFuture,32,3,0,Familiar
+CL902,Medellín,Colombia,15801,EduFuture,109,4,2,Ninguna
+CL903,Pereira,Colombia,42073,GlobalBank,63,3,3,Familiar
+CL904,Bogotá,Colombia,55460,,39,3,1,Alquilada
+CL905,Cali,Colombia,99144,GlobalBank,120,0,0,Propia
+CL906,Medellín,Colombia,82554,Acme Corp,23,4,0,Familiar
+CL907,Medellín,Colombia,85403,GlobalBank,19,0,3,Familiar
+CL908,Cartagena,Colombia,17434,Acme Corp,43,2,3,Alquilada
+CL909,Bogotá,Colombia,55498,HealthPlus,41,1,1,Ninguna
+CL910,Bogotá,Colombia,89251,TechSolutions,96,3,0,Ninguna
+CL911,Cali,Colombia,14661,RetailCo,7,4,3,Ninguna
+CL912,Bogotá,Colombia,77227,TechSolutions,115,1,0,Ninguna
+CL913,Cartagena,Colombia,70263,TechSolutions,100,1,1,Ninguna
+CL914,Cartagena,Colombia,90802,RetailCo,93,4,0,Ninguna
+CL915,Medellín,Colombia,35848,GlobalBank,24,4,0,Familiar
+CL916,Bogotá,Colombia,34951,HealthPlus,77,4,1,Ninguna
+CL917,Bogotá,Colombia,13255,Acme Corp,23,1,3,Ninguna
+CL918,Bogotá,Colombia,45263,TechSolutions,9,1,2,Familiar
+CL919,Pereira,Colombia,58625,Acme Corp,53,1,1,Alquilada
+CL920,Cartagena,Colombia,89983,EduFuture,57,0,0,Familiar
+CL921,Barranquilla,Colombia,52159,GlobalBank,89,4,0,Propia
+CL922,Bogotá,Colombia,80073,Acme Corp,79,4,0,Ninguna
+CL923,Barranquilla,Colombia,99770,Acme Corp,93,4,0,Propia
+CL924,Medellín,Colombia,76654,Acme Corp,39,3,0,Familiar
+CL925,Medellín,Colombia,82320,RetailCo,38,0,0,Propia
+CL926,Cali,Colombia,92799,GlobalBank,4,1,1,Familiar
+CL927,Cartagena,Colombia,65675,,75,0,0,Ninguna
+CL928,Bogotá,Colombia,53035,GlobalBank,27,0,3,Alquilada
+CL929,Pereira,Colombia,74441,HealthPlus,11,4,3,Ninguna
+CL930,Cartagena,Colombia,36100,Acme Corp,15,3,3,Ninguna
+CL931,Medellín,Colombia,63171,Acme Corp,79,2,1,Ninguna
+CL932,Pereira,Colombia,50282,GlobalBank,32,3,2,Ninguna
+CL933,Cartagena,Colombia,64617,EduFuture,22,3,0,Ninguna
+CL934,Cartagena,Colombia,28930,EduFuture,106,0,2,Propia
+CL935,Barranquilla,Colombia,90894,RetailCo,48,4,1,Propia
+CL936,Medellín,Colombia,39436,GlobalBank,7,0,1,Ninguna
+CL937,Barranquilla,Colombia,61566,Acme Corp,5,1,2,Familiar
+CL938,Bogotá,Colombia,37341,EduFuture,112,2,3,Propia
+CL939,Bogotá,Colombia,65015,EduFuture,84,4,3,Alquilada
+CL940,Bogotá,Colombia,71357,TechSolutions,56,3,1,Alquilada
+CL941,Pereira,Colombia,20328,Acme Corp,120,0,0,Familiar
+CL942,Cali,Colombia,85673,HealthPlus,46,0,1,Propia
+CL943,Bogotá,Colombia,31709,Acme Corp,108,3,1,Propia
+CL944,Cartagena,Colombia,20194,HealthPlus,26,2,0,Propia
+CL945,Bogotá,Colombia,54442,Acme Corp,18,3,1,Familiar
+CL946,Pereira,Colombia,67457,,113,3,1,Ninguna
+CL947,Bogotá,Colombia,89239,GlobalBank,69,2,1,Ninguna
+CL948,Bogotá,Colombia,31269,HealthPlus,25,2,2,Alquilada
+CL949,Cali,Colombia,35535,GlobalBank,68,1,1,Propia
+CL950,Cartagena,Colombia,53499,HealthPlus,49,1,1,Ninguna
+CL951,Medellín,Colombia,41077,EduFuture,11,3,0,Alquilada
+CL952,Pereira,Colombia,54425,,1,1,2,Familiar
+CL953,Cali,Colombia,33156,GlobalBank,51,4,3,Propia
+CL954,Cartagena,Colombia,80233,Acme Corp,51,1,2,Ninguna
+CL955,Medellín,Colombia,85925,EduFuture,106,4,1,Propia
+CL956,Cali,Colombia,49994,Acme Corp,31,3,1,Alquilada
+CL957,Cartagena,Colombia,22649,TechSolutions,57,0,3,Familiar
+CL958,Medellín,Colombia,24494,RetailCo,52,4,2,Propia
+CL959,Bogotá,Colombia,63810,EduFuture,34,0,0,Ninguna
+CL960,Bogotá,Colombia,31573,RetailCo,7,0,1,Alquilada
+CL961,Bogotá,Colombia,27920,GlobalBank,70,2,3,Alquilada
+CL962,Medellín,Colombia,78629,HealthPlus,104,2,2,Alquilada
+CL963,Pereira,Colombia,63583,EduFuture,118,4,0,Alquilada
+CL964,Medellín,Colombia,54043,Acme Corp,73,0,1,Familiar
+CL965,Pereira,Colombia,71226,RetailCo,85,4,0,Alquilada
+CL966,Barranquilla,Colombia,45036,TechSolutions,104,0,2,Propia
+CL967,Cali,Colombia,71647,Acme Corp,73,4,2,Alquilada
+CL968,Bogotá,Colombia,17982,,35,3,0,Familiar
+CL969,Cartagena,Colombia,80296,EduFuture,73,1,3,Propia
+CL970,Bogotá,Colombia,13199,RetailCo,39,2,3,Ninguna
+CL971,Pereira,Colombia,24300,RetailCo,105,2,2,Alquilada
+CL972,Cali,Colombia,11716,GlobalBank,8,0,1,Ninguna
+CL973,Cartagena,Colombia,23229,,78,2,2,Ninguna
+CL974,Cali,Colombia,43730,RetailCo,90,2,1,Alquilada
+CL975,Cali,Colombia,58517,,66,4,3,Alquilada
+CL976,Cartagena,Colombia,51388,GlobalBank,1,2,2,Alquilada
+CL977,Cali,Colombia,18979,Acme Corp,1,4,3,Propia
+CL978,Cali,Colombia,50038,Acme Corp,101,4,1,Alquilada
+CL979,Cartagena,Colombia,99790,RetailCo,25,2,3,Ninguna
+CL980,Medellín,Colombia,88217,HealthPlus,21,2,2,Alquilada
+CL981,Cali,Colombia,45981,,48,4,2,Ninguna
+CL982,Medellín,Colombia,66557,TechSolutions,39,4,2,Familiar
+CL983,Pereira,Colombia,11038,Acme Corp,20,1,0,Ninguna
+CL984,Medellín,Colombia,87996,HealthPlus,88,3,1,Ninguna
+CL985,Barranquilla,Colombia,20396,EduFuture,65,1,2,Propia
+CL986,Cali,Colombia,15428,HealthPlus,17,0,2,Alquilada
+CL987,Cali,Colombia,25091,Acme Corp,117,1,1,Propia
+CL988,Bogotá,Colombia,96904,TechSolutions,7,0,0,Alquilada
+CL989,Medellín,Colombia,60980,TechSolutions,32,4,3,Familiar
+CL990,Cartagena,Colombia,63476,HealthPlus,54,4,3,Ninguna
+CL991,Medellín,Colombia,46153,RetailCo,66,0,2,Alquilada
+CL992,Cartagena,Colombia,21305,TechSolutions,22,0,0,Familiar
+CL993,Medellín,Colombia,96200,HealthPlus,5,2,3,Propia
+CL994,Cali,Colombia,41140,HealthPlus,101,2,2,Familiar
+CL995,Pereira,Colombia,96761,,49,4,2,Familiar
+CL996,Medellín,Colombia,94980,Acme Corp,92,0,0,Ninguna
+CL997,Barranquilla,Colombia,11861,EduFuture,79,0,2,Alquilada
+CL998,Pereira,Colombia,14921,TechSolutions,22,3,0,Familiar
+CL999,Bogotá,Colombia,92878,EduFuture,60,0,0,Familiar
+CL1000,Bogotá,Colombia,98668,,40,2,3,Familiar

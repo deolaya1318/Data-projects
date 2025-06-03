@@ -1,0 +1,49 @@
+# -----------------------------------------------------------------------------
+# template-s3.yaml
+# -----------------------------------------------------------------------------
+# This CloudFormation template creates the S3 buckets used in the ETL pipeline.
+# It defines:
+#
+# - S3Bucket: The main S3 bucket for storing raw and processed data
+#   (awsdatacloudersprojectdaniel-s3-data).
+# - SampleBucketPolicy: Grants AWS Glue permission to read objects from the bucket.
+# 
+# The template also exports the bucket ARN as an output for use in other stacks.
+# Encryption can be enabled using a KMS key passed as a parameter.
+# -----------------------------------------------------------------------------
+
+AWSTemplateFormatVersion: '2010-09-09'
+Description: s3 bucket creation.
+
+Parameters:
+    S3KMSKey:
+        Type: String
+
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: awsdatacloudersprojectdaniel-s3-data
+
+  SampleBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    DependsOn: [S3Bucket]
+    Properties:
+      Bucket: !Ref S3Bucket
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Action: 
+              - "s3:GetObject"
+            Effect: "Allow"
+            Resource: 
+              - !Sub "arn:aws:s3:::${S3Bucket}"
+              - !Sub "arn:aws:s3:::${S3Bucket}/*"
+            Principal:
+              Service: "glue.amazonaws.com"
+
+Outputs:
+  Bucketdata:
+      Value: !Sub "arn:aws:s3:::${S3Bucket}"
+      Export:
+        Name: Bucketdata
