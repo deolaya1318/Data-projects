@@ -1,0 +1,99 @@
+# -----------------------------------------------------------------------------
+# master.yaml
+# -----------------------------------------------------------------------------
+# This is the root CloudFormation template for the serverless ETL pipeline.
+# It orchestrates the deployment of all infrastructure components by referencing
+# nested stack templates for:
+#
+# - KMS: Encryption key for S3 and other resources
+# - S3: Buckets for data and code
+# - IAM: Roles and policies for Lambda, Glue, and Step Functions
+# - RDS: PostgreSQL database instance and networking
+# - Lambdas: Extraction and orchestration Lambda functions
+# - Glue: ETL and data quality Glue jobs
+# - Step Functions: Workflow to coordinate the ETL process
+#
+# Each nested stack is deployed in dependency order, passing outputs as parameters
+# to ensure correct wiring of resources and permissions.
+# -----------------------------------------------------------------------------
+
+AWSTemplateFormatVersion: 2010-09-09
+
+Parameters:
+  AWSRegion:
+    Type: String
+    Default: us-east-1
+    Description: AWS region to deploy resources
+
+Resources:
+    # Nested stacks for each component of the ETL pipeline
+    # Each stack is defined with its own template URL and parameters as needed
+    
+    # The order of deployment is important to ensure dependencies are met
+    # KMS stack must be deployed first to create the encryption key
+    # S3 stack depends on KMS for bucket encryption
+    # IAM stack depends on KMS and S3 for permissions
+    # RDS stack depends on IAM for database access
+    # Lambdas stack depends on IAM
+    # Glue stack depends on IAM and S3 for ETL jobs
+    # Step Functions stack depends on IAM, Lambdas, and Glue for workflow orchestration
+
+    kms:
+        Type: "AWS::CloudFormation::Stack"
+        Properties:
+            TemplateURL: https://data-clouders-project.s3.us-east-1.amazonaws.com/code/template-kms.yaml
+
+    s3:
+        Type: "AWS::CloudFormation::Stack"
+        DependsOn: [kms]
+        Properties:
+            TemplateURL: https://data-clouders-project.s3.us-east-1.amazonaws.com/code/template-s3.yaml
+            Parameters:
+                S3KMSKey: !GetAtt kms.Outputs.kmss3
+
+    iam:
+        Type: "AWS::CloudFormation::Stack"
+        DependsOn: 
+            - kms
+            - s3
+        Properties:
+            TemplateURL: https://data-clouders-project.s3.us-east-1.amazonaws.com/code/template-iam.yaml
+            Parameters:
+                S3KMSKey: !GetAtt kms.Outputs.kmsarn
+                Bucketdataconsume: !GetAtt s3.Outputs.Bucketdata
+    
+    rds:
+        Type: "AWS::CloudFormation::Stack"
+        DependsOn: iam
+        Properties:
+            TemplateURL: https://data-clouders-project.s3.us-east-1.amazonaws.com/code/rds_postgres.yaml
+
+    lambdas:
+        Type: "AWS::CloudFormation::Stack"
+        DependsOn: 
+            - iam
+        Properties:
+            TemplateURL: https://data-clouders-project.s3.us-east-1.amazonaws.com/code/template-lambdas.yaml
+            Parameters:
+                LambdaExecutionRole: !GetAtt iam.Outputs.LambdaExecutionRolearn
+
+    glue:
+        Type: "AWS::CloudFormation::Stack"
+        DependsOn: 
+            - iam
+            - s3
+        Properties:
+            TemplateURL: https://data-clouders-project.s3.us-east-1.amazonaws.com/code/template-glue.yaml
+            Parameters:
+                roleglue: !GetAtt iam.Outputs.glueExecutionRolearn
+
+    step:
+        Type: "AWS::CloudFormation::Stack"
+        DependsOn: 
+            - iam
+            - lambdas
+            - glue
+        Properties:
+            TemplateURL: https://data-clouders-project.s3.us-east-1.amazonaws.com/code/template-step.yaml
+            Parameters:
+                StepExecutionRole: !GetAtt iam.Outputs.stepExecutionRolearn
