@@ -1,0 +1,78 @@
+# -----------------------------------------------------------------------------
+# template-lambdas.yaml
+# -----------------------------------------------------------------------------
+# This CloudFormation template defines an AWS Lambda function for executing a SQL
+# script ('script.sql') stored in the runtime S3 bucket on an RDS instance as part
+# of the ETL pipeline.
+#
+# The Lambda deployment package (rds_connection_handler.zip) is stored in the S3
+# bucket 'rds-connection-project'.
+#
+# The Lambda function is configured with environment variables for the runtime S3
+# bucket, SQL script key, and RDS connection details. It reads 'script.sql' from
+# the runtime S3 bucket, executes it on RDS, and saves the results as CSV and JSON
+# back to the same bucket.
+#
+# The LambdaExecutionRole is passed as a parameter and must grant the necessary
+# permissions for S3 and RDS access.
+# -----------------------------------------------------------------------------
+
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Lambda function to execute SQL script from S3 on RDS.
+
+Parameters:
+  LambdaExecutionRole:
+    Type: String
+  SourceBucketName:
+    Type: String
+  DestinationBucketName:
+    Type: String
+  RDSHost:
+    Type: String
+  RDSUser:
+    Type: String
+  RDSPassword:
+    Type: String
+  RDSDBName:
+    Type: String
+  SecurityGroupId:
+    Type: String
+  SubnetId1:
+    Type: String
+  SubnetId2:
+    Type: String
+
+Resources:
+  ExecuteSQLScriptLambda:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: ExecuteSQLScriptOnRDS
+      Environment:
+        Variables:
+          SOURCE_S3_BUCKET: !Ref SourceBucketName
+          DESTINATION_S3_BUCKET: !Ref DestinationBucketName
+          SQL_SCRIPT_KEY: script.sql
+          RDS_HOST: !Ref RDSHost
+          RDS_USER: !Ref RDSUser
+          RDS_PASSWORD: !Ref RDSPassword
+          RDS_DBNAME: !Ref RDSDBName
+      Runtime: python3.9
+      Handler: rds_connection_handler.lambda_handler
+      Role: !Ref LambdaExecutionRole
+      Code:
+        S3Bucket: rds-connection-project
+        S3Key: code/rds_connection_handler.zip
+      Timeout: 120
+      MemorySize: 2048
+      VpcConfig:
+        SecurityGroupIds:
+          - !Ref SecurityGroupId
+        SubnetIds:
+          - !Ref SubnetId1
+          - !Ref SubnetId2
+
+Outputs:
+  LambdaArn:
+    Value: !GetAtt ExecuteSQLScriptLambda.Arn
+    Export:
+      Name: ExecuteSQLScriptLambdaArn

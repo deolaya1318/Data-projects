@@ -1,0 +1,47 @@
+# -----------------------------------------------------------------------------
+# template-step.yaml
+# -----------------------------------------------------------------------------
+# This CloudFormation template defines an AWS Step Functions State Machine for
+# orchestrating the ETL pipeline. The state machine invokes the Lambda function
+# that reads a SQL script ('script.sql') from the runtime S3 bucket, executes it
+# on the RDS instance, and saves the results back to the same bucket.
+#
+# The Lambda function and all nested stack templates are referenced from the S3
+# bucket 'rds-connection-project'.
+#
+# The template outputs the ARN of the created Step Function for use in other stacks.
+# -----------------------------------------------------------------------------
+
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Defining the Step function State Machine.
+
+Parameters:
+  StepExecutionRole:
+    Type: String
+  LambdaArn:
+    Type: String
+
+Resources:
+  MyStepFunction:
+    Type: AWS::StepFunctions::StateMachine
+    Properties:
+      StateMachineName: StepFunctionETLServerless
+      RoleArn: !Ref StepExecutionRole
+      DefinitionString: !Sub |
+        {
+          "Comment": "Invoke Lambda to execute SQL script on RDS",
+          "StartAt": "ExecuteSQLScriptLambda",
+          "States": {
+            "ExecuteSQLScriptLambda": {
+              "Type": "Task",
+              "Resource": "${LambdaArn}",
+              "End": true
+            }
+          }
+        }
+
+Outputs:
+  ArnStepFunction:
+    Value: !GetAtt MyStepFunction.Arn
+    Export:
+      Name: ArnStepFunction

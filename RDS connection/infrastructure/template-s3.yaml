@@ -1,0 +1,49 @@
+# -----------------------------------------------------------------------------
+# template-s3.yaml
+# -----------------------------------------------------------------------------
+# This CloudFormation template creates the S3 bucket used for storing SQL scripts
+# and results at runtime. The bucket is named 'awsrdsconnectionproject-sqlscripts'.
+# Encryption is enabled using a KMS key passed as a parameter.
+#
+# A bucket policy is included to allow Lambda (or other principals) to get objects
+# from the bucket. The bucket name is exported for use in other stacks.
+#
+# Note: All deployment templates and Lambda code are stored in the S3 bucket
+# 'rds-connection-project', which is separate from this runtime bucket.
+# -----------------------------------------------------------------------------
+
+AWSTemplateFormatVersion: '2010-09-09'
+Description: S3 bucket for SQL script storage.
+
+Parameters:
+  S3KMSKey:
+    Type: String
+
+Resources:
+  SQLScriptBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: awsrdsconnectionprojectdaniel
+
+  SQLScriptBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    DependsOn: [SQLScriptBucket]
+    Properties:
+      Bucket: !Ref SQLScriptBucket
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Action: 
+              - "s3:GetObject"
+            Effect: "Allow"
+            Resource:  
+              - !Sub "arn:aws:s3:::${SQLScriptBucket}"
+              - !Sub "arn:aws:s3:::${SQLScriptBucket}/*"
+            Principal:
+              Service: "glue.amazonaws.com" # Adjust this to the specific Lambda role ARN for least privilege
+
+Outputs:
+  BucketName:
+    Value: !Ref SQLScriptBucket
+    Export:
+      Name: SQLScriptBucketName

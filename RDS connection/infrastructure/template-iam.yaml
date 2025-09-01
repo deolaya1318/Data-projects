@@ -1,0 +1,94 @@
+# -----------------------------------------------------------------------------
+# template-iam.yaml
+# -----------------------------------------------------------------------------
+# This CloudFormation template defines a single IAM role for AWS Lambda functions
+# and AWS Step Functions. The role grants permissions to access the runtime S3 bucket,
+# use KMS keys for encryption/decryption, access RDS databases, and write logs to
+# CloudWatch. It also allows Step Functions to invoke the Lambda function.
+#
+# The template exports the ARN of the role for use in other stacks.
+#
+# Note: All deployment templates and Lambda code are stored in the S3 bucket
+# 'rds-connection-project', which is separate from the runtime S3 bucket.
+# -----------------------------------------------------------------------------
+
+AWSTemplateFormatVersion: '2010-09-09'
+Description: IAM role for Lambda and Step Functions to access S3 and RDS.
+
+Parameters:
+  S3KMSKey:
+    Type: String
+  BucketName:
+    Type: String
+
+Resources:
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+                - states.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Policies:
+        - PolicyName: LambdaS3RDSAccessPolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:ListBucket
+                  - s3:PutObject
+                Resource:
+                  - !Sub "arn:aws:s3:::${BucketName}"
+                  - !Sub "arn:aws:s3:::${BucketName}/*"
+              - Effect: Allow
+                Action:
+                  - kms:Decrypt
+                Resource: !Ref S3KMSKey
+              - Effect: Allow
+                Action:
+                  - rds-db:connect
+                  - rds:DescribeDBInstances
+                Resource: '*'
+              - Effect: Allow
+                Action:
+                  - logs:CreateLogGroup
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: '*'
+              - Effect: Allow
+                Action:
+                  - lambda:InvokeFunction
+                Resource: '*'
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:ListBucket
+                Resource:
+                  - arn:aws:s3:::rds-connection-project
+                  - arn:aws:s3:::rds-connection-project/code/*
+              - Effect: Allow
+                Action:
+                  - ec2:CreateNetworkInterface
+                  - ec2:DescribeNetworkInterfaces
+                  - ec2:DeleteNetworkInterface
+                  - ec2:AssignPrivateIpAddresses
+                  - ec2:UnassignPrivateIpAddresses
+                Resource: '*'
+
+Outputs:
+  LambdaExecutionRolearn:
+    Value: !GetAtt LambdaExecutionRole.Arn
+    Export:
+      Name: LambdaExecutionRolearn
+  stepExecutionRolearn:
+    Value: !GetAtt LambdaExecutionRole.Arn
+    Export:
+      Name: stepExecutionRolearn

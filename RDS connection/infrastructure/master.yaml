@@ -1,0 +1,92 @@
+# -----------------------------------------------------------------------------
+# master.yaml
+# -----------------------------------------------------------------------------
+# This is the root CloudFormation template for the serverless ETL pipeline.
+# It orchestrates the deployment of all infrastructure components by referencing
+# nested stack templates for:
+#
+# - KMS: Encryption key for S3 and other resources
+# - S3: Bucket for SQL scripts, results, and data
+# - IAM: Role and policies for Lambda and Step Functions
+# - RDS: PostgreSQL database instance and networking
+# - Lambda: Function to read a SQL script from S3 and execute it on RDS
+# - Step Functions: Workflow to coordinate the Lambda execution
+#
+# All nested stack templates and Lambda deployment packages are referenced from
+# the S3 bucket named 'rds-connection-project'. The S3 bucket created by this stack
+# is used at runtime for SQL scripts and results. The Lambda function reads 'script.sql'
+# from the runtime S3 bucket, executes it on RDS, and saves results back to the same bucket.
+#
+# Each nested stack is deployed in dependency order, passing outputs as parameters
+# to ensure correct wiring of resources and permissions.
+# -----------------------------------------------------------------------------
+
+AWSTemplateFormatVersion: 2010-09-09
+
+Parameters:
+  AWSRegion:
+    Type: String
+    Default: us-east-1
+    Description: AWS region to deploy resources
+
+Resources:
+  kms:
+    Type: "AWS::CloudFormation::Stack"
+    Properties:
+      TemplateURL: https://rds-connection-project.s3.us-east-1.amazonaws.com/infrastructure/template-kms.yaml
+
+  s3:
+    Type: "AWS::CloudFormation::Stack"
+    DependsOn: [kms]
+    Properties:
+      TemplateURL: https://rds-connection-project.s3.us-east-1.amazonaws.com/infrastructure/template-s3.yaml
+      Parameters:
+        S3KMSKey: !GetAtt kms.Outputs.kmss3
+
+  iam:
+    Type: "AWS::CloudFormation::Stack"
+    DependsOn: 
+      - kms
+      - s3
+    Properties:
+      TemplateURL: https://rds-connection-project.s3.us-east-1.amazonaws.com/infrastructure/template-iam.yaml
+      Parameters:
+        S3KMSKey: !GetAtt kms.Outputs.kmsarn
+        BucketName: !GetAtt s3.Outputs.BucketName
+
+  rds:
+    Type: "AWS::CloudFormation::Stack"
+    DependsOn: iam
+    Properties:
+      TemplateURL: https://rds-connection-project.s3.us-east-1.amazonaws.com/infrastructure/rds_postgres.yaml
+      
+  lambda:
+    Type: "AWS::CloudFormation::Stack"
+    DependsOn: 
+      - iam
+      - s3
+      - rds
+    Properties:
+      TemplateURL: https://rds-connection-project.s3.us-east-1.amazonaws.com/infrastructure/template-lambdas.yaml
+      Parameters:
+        LambdaExecutionRole: !GetAtt iam.Outputs.LambdaExecutionRolearn
+        SourceBucketName: rds-connection-project
+        DestinationBucketName: !GetAtt s3.Outputs.BucketName
+        RDSHost: !GetAtt rds.Outputs.Endpoint
+        RDSUser: !GetAtt rds.Outputs.Username
+        RDSPassword: !GetAtt rds.Outputs.Password
+        RDSDBName: !GetAtt rds.Outputs.DBName
+        SecurityGroupId: !GetAtt rds.Outputs.RDSSecurityGroupId
+        SubnetId1: !GetAtt rds.Outputs.RDSSubnet1
+        SubnetId2: !GetAtt rds.Outputs.RDSSubnet2
+
+  step:
+    Type: "AWS::CloudFormation::Stack"
+    DependsOn: 
+      - iam
+      - lambda
+    Properties:
+      TemplateURL: https://rds-connection-project.s3.us-east-1.amazonaws.com/infrastructure/template-step.yaml
+      Parameters:
+        StepExecutionRole: !GetAtt iam.Outputs.stepExecutionRolearn
+        LambdaArn: !GetAtt lambda.Outputs.LambdaArn
